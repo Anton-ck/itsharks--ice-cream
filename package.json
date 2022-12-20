@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "itsharks--ice-cream",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://goitacademy.github.io/parcel-project-template",
+  "homepage": "https://Anton-ck.github.io/itsharks--ice-cream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /parcel-project-template/"
+    "build": "parcel build src/*.html --public-url /itsharks--ice-cream/"
   },
   "repository": {
     "type": "git",
