@@ -37,6 +37,14 @@ button {
     border-radius: 10px;
 }
 
+body {
+    color: var(--first-text-color);
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    cursor: url(../images/icons/vector.png) 1 5, auto;
+}
+
 
 .container {    
    padding: 0 16px;

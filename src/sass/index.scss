@@ -1,2 +1,14 @@
 @import './common';
-@import './example';
+
+@import './base/variables';
+@import './base/reset';
+
+@import './partials/header';
+@import './partials/hero';
+@import './partials/products';
+@import './partials/about';
+@import './partials/advant';
+@import './partials/gallery';
+@import './partials/reviews';
+@import './partials/contacts';
+@import './partials/footer';
