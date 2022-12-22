@@ -12,13 +12,14 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-// }
+.backdrop.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
 
-.franchise-modal {
+.franchise-modal,
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -55,7 +56,8 @@
   }
 }
 
-.franchise-modal__title {
+.franchise-modal__title,
+.modal__title {
   font-family: 'Seymour One';
   font-style: normal;
   font-weight: 400;
@@ -77,7 +79,8 @@
   }
 }
 
-.franchise-modal__text {
+.franchise-modal__text,
+.modal__text {
   font-size: 14px;
   line-height: 1.4;
 
@@ -92,7 +95,8 @@
   }
 }
 
-.franchise-modal__button {
+.franchise-modal__button,
+.modal__close-button {
   position: absolute;
   top: 12px;
   right: 12px;
@@ -115,7 +119,9 @@
 }
 
 .franchise-modal__button:hover,
-.franchise-modal__button:focus {
+.franchise-modal__button:focus,
+.modal__close-button:hover,
+.modal__close-button:focus {
   .close-icon {
     fill: #2196f3;
   }
@@ -166,7 +172,8 @@
   margin-bottom: 0;
 }
 
-.franchise__button {
+.franchise__button,
+.modal__button {
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
