@@ -1,0 +1,79 @@
+.about {
+  padding-top: 61px;
+  padding-bottom: 64px;
+}
+
+.about__label {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+
+  margin-bottom: 12px;
+}
+
+.about__header {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+
+  margin-bottom: 32px;
+}
+
+.about__image {
+  display: block;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+.about__paragraph {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 220px;
+  gap: 4px;
+}
+
+about__paragraph--first,
+about__paragraph--second {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: var(--first-text-color);
+}
+
+.about__paragraph--second {
+  line-height: 1.62;
+}
+
+.about__button {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.5;
+
+  background-color: var(--yellow);
+
+  padding: 12px 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.button__icon {
+  fill: black;
+  margin-left: 8px;
+}
