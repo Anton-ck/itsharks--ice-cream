@@ -21,9 +21,16 @@
 .franchise-modal__title {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1, 5;
+  line-height: 1.5;
   margin-left: 0;
   margin-right: 0;
+
+  color: $second-text-color;
+}
+
+.franchise-modal__text {
+  font-size: 14px;
+  line-height: 1.4;
 
   color: $second-text-color;
 }
