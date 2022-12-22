@@ -1,35 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mountains+of+Christmas:wght@700&display=swap');
 .hello {
-    color: #C30F16;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-    flex-direction: column;
-    height: 100vw;
+  color: #c30f16;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
+  flex-direction: column;
+  height: 100vw;
 }
 
 .santa {
-    position: absolute;
-    top: 40%;
-    left: 350px;
+  position: absolute;
+  top: 40%;
+  left: 350px;
 }
 
 .train {
-    position: absolute;
-    top: 0;
-    left: 400px;
-    
+  position: absolute;
+  top: 0;
+  left: 400px;
 }
 
 .ex {
-font-family: 'Mountains of Christmas';    
-position: absolute;
-top: 15%;
-left: 150px;
-    font-weight: 800;
-      font-size: 48px;
-transform: rotate(-10deg);
-
+  font-family: 'Mountains of Christmas';
+  position: absolute;
+  top: 15%;
+  left: 150px;
+  font-weight: 800;
+  font-size: 48px;
+  transform: rotate(-10deg);
 }
-
