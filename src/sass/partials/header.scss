@@ -3,7 +3,6 @@
     padding: 12px 20px 0 20px;
     margin-left: auto;
     margin-right: auto;
-    height: 49px;
   }
 }
 
@@ -20,7 +19,7 @@
   border: none;
   outline: none;
   color: var(--first-text-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--yellow);
