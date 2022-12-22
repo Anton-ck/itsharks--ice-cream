@@ -1,0 +1,43 @@
+<header class="page-header">
+  <div class="page-header__content">
+    <a href="./index.html" class="page-header__link"> 
+          <img class="page-header__logo" srcset="
+							./images/header/site-logo40@1x.png 40w, 
+							./images/header/site-logo40@2x.png 80w,
+							./images/header/site-logo48@1x.png 48w,
+							./images/header/site-logo48@2x.png 96w,
+							./images/header/site-logo60@1x.png 60w,
+							./images/header/site-logo60@2x.png 120w"
+							sizes="(min-width: 1200px) 60px, (min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
+							src="./images/header/site-logo40@1x.png" alt="Site logo" loading="lazy"/>
+    </a>
+    <button class="menu-toggle js-open-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="32px" height="32px">
+            <use class="menu-toggle__icon-menu" href="./images/icons.svg#menu"></use>
+        <svg >
+    </button>
+  </div>
+</header>
+
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+	<a href="./index.html" class="menu-container __link"> 
+    </a>
+		<div class="mobile-menu">
+             <a href="./index.html" class="mobile-menu__link"> 
+                <svg width="40px" height="37px">
+                    <use class="mobile-menu__logo" href="./images/icons.svg#close"></use>
+                <svg > 
+             </a>
+			<nav class="mobile-nav">
+				<ul class="mobile-nav__list">
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="./index.html">Home</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="#">How it's made?</a></li>
+					<li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Our products</a></li>
+                    <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Contact</a></li>
+				</ul>
+			</nav>
+            <button class="menu-container__button" type="button" aria-expanded="false">Buy >
+    </button>
+		</div>
+	</div>
