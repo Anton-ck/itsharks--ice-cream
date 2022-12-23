@@ -1,4 +1,151 @@
+.swiper__section{
+        padding-top: 40px;
+      padding-bottom: 40px;
+  
+      @media screen and (min-width: 768px) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+  
+      @media screen and (min-width: 1200px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+      }
+
+            background-image: 
+            url('../images/reviews-bg/mobile.jpg');
+      
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+              background-image:
+                url('../images/reviews-bg/mobile2x.jpg');
+            }
+      
+            @media screen and (min-width: 768px) {
+              background-image:
+                url('../images/reviews-bg/tablet.jpg');
+      
+              @media (min-device-pixel-ratio: 2),
+              (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
+                background-image:
+                  url('../images/reviews-bg/tablet2x.jpg');
+              }
+            }
+      
+            @media screen and (min-width: 1200px) {
+              background-image: 
+                url('../images/reviews-bg/desctop.jpg');
+      
+              @media (min-device-pixel-ratio: 2),
+              (min-resolution: 192dpi),
+              (min-resolution: 2dppx) {
+                background-image:
+                  url('../images/reviews-bg/desctop2x.jpg');
+              }
+    }}
+
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 280px;
+
+  @media screen and (min-width: 768px) {
+      width: 705px;
+    }
+  
+    @media screen and (min-width: 1200px) {
+      width: 968px;
+    }
+  
 }
+
+.swiper__bg {
+  position: relative;
+  background-color: #84A178;
+border-radius: 24px;
+height: 256px;
+margin: 32px 0;
+
+@media screen and (min-width: 768px) {
+    width: 705px;
+    height: 138px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+    height: 138px;
+  }
+}
+
+.swiper__reviews {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 255%;
+   
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+  
+    color: #FCFCFC;
+    position: absolute;
+
+    top: 50%;
+    transform: translate(0, -50%);
+    
+
+    padding-right: 39px;
+    padding-left: 39px;
+    // padding-right: 39px;
+    
+    
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+          line-height: 186%;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        font-size: 16px;
+          line-height: 186%;
+        }
+      }
+
+
+ .swiper__name {
+  font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+  
+    text-align: center;
+  
+    color: #131313;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px; 
+        
+         
+      }
+    
+}
+
+.swiper__image {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: block;
+}
+
+.swiper-pagination-bullet {
+  background-color: #84A178;
+  width: 12px;
+  height: 12px;
+  margin-top: 12px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 32px;
+}}
