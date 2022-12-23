@@ -12,9 +12,14 @@
   color: var(--first-text-color);
 
   margin-bottom: 12px;
-}
 
-@media screen and (min-width: 768px) {
+  // tablet
+  @media screen and (min-width: 768px) {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+  }
 }
 
 .about__header {
@@ -28,6 +33,16 @@
   color: var(--first-text-color);
 
   margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__content {
+    display: flex;
+  }
 }
 
 .about__image {
@@ -36,16 +51,36 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+  background-color: inherit;
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    margin-right: 38px;
+    margin-top: 98px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
 }
 
 .about__paragraph {
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px;
   text-align: center;
   width: 220px;
   gap: 4px;
+
+  // tablet
+  @media screen and (min-width: 768px) {
+    display: inline;
+    text-align: left;
+    margin-top: 80px;
+    width: 334px;
+    margin-bottom: 0;
+
+    font-size: 12px;
+    gap: 8px;
+  }
 }
 
 about__paragraph--first,
@@ -60,6 +95,20 @@ about__paragraph--second {
 
 .about__paragraph--second {
   line-height: 1.62;
+  @media screen and (min-width: 768px) {
+    line-height: 1.76;
+  }
+}
+
+.about__paragraph--third {
+  display: none;
+
+  // tablet
+
+  @media screen and (min-width: 768px) {
+    display: inline;
+    line-height: 1.94;
+  }
 }
 
 .about__button {
@@ -74,6 +123,10 @@ about__paragraph--second {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 206px;
+  }
 }
 
 .button__icon {
