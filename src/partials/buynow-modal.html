@@ -1,0 +1,57 @@
+<div class="backdrop hidden" data-modal>
+  <div class="buy-modal modal">
+    <button
+      class="buy-modal__button modal__close-button button"
+      data-modal-close
+    >
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="buy-modal__title modal__title">Buy now</h3>
+    <div class="buy-modal__div">
+      <div class="buy-modal__image"></div>
+      <p class="buy-modal__text">ice cream</p>
+    </div>
+    <div class="buy-modal__div">
+      <div class="buy-modal__image"></div>
+      <p class="buy-modal__text">ice coffee</p>
+    </div>
+    <div class="buy-modal__div">
+      <div class="buy-modal__image"></div>
+      <p class="buy-modal__text">milkshake</p>
+    </div>
+    <form name="buy-modal__form" class="modal__form buy-modal__form">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="buy-modal__input modal__input"
+        placeholder="Name"
+      />
+      <!-- <div class="franchise__div">
+        <label for="name" name="name-user" class="franchise__label">Name</label>
+      </div> -->
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        class="buy-modal__input modal__input"
+        placeholder="Phone"
+      />
+      <!-- <div class="franchise__div">
+        <label for="tel" name="tel-user" class="franchise__label">Phone</label>
+      </div> -->
+      <textarea
+        name="comment"
+        id="comment"
+        rows="4"
+        class="buy-modal__input modal__input textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="buy-modal__button modal__button button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
