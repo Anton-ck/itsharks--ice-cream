@@ -7,13 +7,10 @@
         <!-- Slides -->
 
         <div class="swiper-slide">
-          <img
-            class="swiper__image"
-            srcset="./images/reviews/emily.jpg, ./images/reviews/emily2x.jpg"
-            src="./images/reviews/emily.jpg"
-            alt="Emily"
-            loading="lazy"
-          />
+          <img class="swiper__image"
+            srcset="./images/reviews/emily.jpg, ./images/reviews/emily@2x.jpg"
+            src="./images/reviews/emily.jpg" alt="Emily" loading="lazy" width="85" height="85"/>
+
           <div class="swiper__bg">
             <p class="swiper__reviews">
               I love visiting your cafe. You prepare the most delicious ice
@@ -26,11 +23,12 @@
         <div class="swiper-slide">
           <img
             class="swiper__image"
-            srcset="./images/reviews/bryan.jpg, ./images/reviews/bryan2x.jpg"
+
+            srcset="./images/reviews/bryan.jpg, ./images/reviews/bryan@2x.jpg"
             src="./images/reviews/bryan.jpg"
-            alt="bryan"
-            loading="lazy"
-          />
+            alt="Bryan"
+            loading="lazy" width="85" height="85"/>
+
           <div class="swiper__bg">
             <p class="swiper__reviews">
               Every day we come to you with friends after classes in college. We
@@ -42,10 +40,12 @@
         <div class="swiper-slide">
           <img
             class="swiper__image"
-            srcset="./images/reviews/diana.jpg, ./images/reviews/diana2x.jpg"
+
+            srcset="./images/reviews/diana.jpg, ./images/reviews/diana@2x.jpg"
             src="./images/reviews/diana.jpg"
             alt="Diana"
-            loading="lazy"
+            loading="lazy" width="85" height="85"
+
           />
           <div class="swiper__bg">
             <p class="swiper__reviews">
@@ -59,11 +59,12 @@
         ...
       </div>
       <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+      <div class="swiper-pagination" aria-label="swiper"></div>
 
-      <!-- If we need navigation buttons
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
+       <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev" aria-label="swipe prev"></div>
+    <div class="swiper-button-next" aria-label="swipe next"></div>
+
 
       <!-- If we need scrollbar -->
       <!-- <div class="swiper-scrollbar"></div>
