@@ -1,0 +1,52 @@
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <a href="./index.html" class="menu-container__link">
+    <img
+      class="menu-container__logo"
+      srcset="
+        ./images/icons/header/site-logo40@1x.png 40w,
+        ./images/icons/header/site-logo40@2x.png 80w,
+        ./images/icons/header/site-logo48@1x.png 48w,
+        ./images/icons/header/site-logo48@2x.png 96w
+      "
+      sizes="(min-width: 768px) 48px, (min-width: 320px) 40px, 100vw"
+      src="./images/icons/header/site-logo40@1x.png"
+      alt="Site logo"
+      loading="lazy"
+    />
+  </a>
+  <button class="menu-toggle js-close-menu" aria-label="Close">
+    <svg class="menu-toggle__icon-menu" width="32" height="32">
+      <use href="./images/icons/icons.svg#close"></use>
+    </svg>
+  </button>
+  <div class="mobile-menu">
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#home">Home</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#how_it's_made">How it's made?</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#our_products">Our products</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a class="mobile-nav__link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="menu-container__button" type="button" aria-label="Buy">
+      Buy now
+      <svg class="menu-container__button-icon" width="12px" height="12px">
+        <use href="./images/icons/icons.svg#vector"></use>
+      </svg>
+    </button>
+  </div>
+</div>
+<script
+  defer
+  src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"
+></script>

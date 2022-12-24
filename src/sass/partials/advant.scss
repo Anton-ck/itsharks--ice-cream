@@ -1,0 +1,116 @@
+.advant__container {
+    background-color: #84A178;
+    width: 100%;
+    padding: 64px 45px;
+    justify-content: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 0px 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 0px 16px;
+    }
+}
+
+.advant {
+    justify-content: center;
+    width: 100%;
+    display: block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        gap: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        gap: 32px;
+    }
+}
+
+.advant-uhdertitle {
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 258px;
+
+    @media screen and (min-width: 768px) {
+        width: 152px;
+        height: 241px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        height: 225px;
+    }
+}
+
+.advant__icon {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: 22px;
+    bottom: 22px;
+
+    @media screen and (min-width: 768px) {
+        top: 0px;
+        bottom: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 0px;
+        bottom: 40px;
+    }
+}
+
+.advant__title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(44 / 36);
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FCFCFC;
+    padding-top: 94px;
+    margin-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+        line-height: calc(59 / 48);
+        margin-bottom: 12px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+        line-height: calc(71 / 58);
+        margin-bottom: 12px;
+    }
+}
+
+.advant__text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #FCFCFC;
+    margin-bottom: 28px;
+    width: 230px;
+
+    @media screen and (min-width: 768px) {
+        width: 152px;
+        font-size: 14px;
+        line-height: 174%;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 368px;
+        font-size: 16px;
+        line-height: 176%;
+    }
+}
