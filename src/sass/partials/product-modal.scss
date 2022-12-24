@@ -105,8 +105,9 @@
 }
 
 .thumb__div {
-  margin-right: auto;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 7px;
 
   background: #9cbe8f;
