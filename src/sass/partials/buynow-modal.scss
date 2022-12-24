@@ -56,6 +56,12 @@
   }
 }
 
+.buy-modal {
+  @media screen and (min-width: 768px) {
+    padding: 32px 54px;
+  }
+}
+
 .buy-modal__title,
 .modal__title {
   font-family: 'Seymour One';
@@ -122,13 +128,13 @@
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  width: 132px;
-  padding: 95px 13px 20px;
+  width: 134px;
+  padding: 95px 12px 20px;
   border: 2px solid #96af8c;
   border-radius: 15px;
 
   @media screen and (min-width: 768px) {
-    width: calc((100% - 32px) / 3);
+    width: 132px;
   }
 }
 
@@ -160,7 +166,7 @@
   content: ' ';
   position: absolute;
   left: 50%;
-  top: -50px;
+  top: -63px;
   transform: translateX(-50%);
   background-position: 0 0;
   border-radius: 50%;
@@ -278,6 +284,7 @@
 
 .buy-modal__name {
   font-weight: 700;
+  margin-top: auto;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
