@@ -1,21 +1,215 @@
-.hello {
-    color: tomato;
+
+
+// HERO STYLES
+
+
+.container {
+    padding-left: 20px;
+    @media screen and (min-width: 768px) {
+        padding-left: 32px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-left: 16px;
+    }
+}
+
+.hero {
+    background-color: var(--background-color);
+    margin: 0 auto;
+    
+
+    height: 100vh;
+    background-size: auto, contain;
+    background-repeat: no-repeat;
+    background-position: center bottom,  right 92px bottom;
+    overflow: hidden;
+    // background-image: url(./../images/hero/mobile.png), url(../images/hero/dots.png);
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        height: 415px;
+        background-position: right 92px bottom,  right bottom;
+        background-size: 268px 325px, contain;
+    }
+    @media screen and (min-width: 1200px) {
+        // background-image: url(./../images/hero/mobile@2x.png), url(../images/hero/dots.png);
+        background-position: right 120px bottom,  right bottom;
+        background-size: 456px 560px, contain;
+        height: 664px;
+    }
+}
+
+.hero:after {
+    // background-image: url(../images/icons.svg#dots-mobile);
+    content: "";
+    width: 100px;
+    height: 100px;
+    
+}
+
+
+.hero__title {
+    width: 247px;
+    font-family: Seymour One;
+    font-size: 26px;
+    font-weight: calc(33 / 26);
+    letter-spacing: 0.04;
+    text-transform: uppercase;
+}
+
+.hero__description {
+    display: none;
+    @media screen and (min-width: 768px) {
+        // background: url('./../images/hero/ice_cream.png') left top no-repeat;
+        background-size: 152px;
+        width: 330px;
+        height: 152px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-top: 12px;
+
+        p {
+            font-size: 12px;
+            line-height: calc(17 / 12);
+            width: 150px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 461px;
+        height: 225px;
+        background-size: 225px;
+        margin-top: 105px;
+        p {
+            font-size: 14px;
+            line-height: calc(20 / 14);
+            width: 220px;
+        }
+    }
+    .hero__arrow {
+        // background: url('./../images/icons/arrow.png') no-repeat;
+        background-size: contain;
+        width: 40px;
+        height: 16px;
+        display: none;
+        @media screen and (min-width: 768px) {
+            display: block;
+            margin-top: 12px;
+        }
+        @media screen and (min-width: 1200px) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.hero__title--mix {
+    font-family: Seymour One;
+    font-size: 34px;
+    font-weight: calc(33 / 34);
+    letter-spacing: normal;
+}
+
+.hero__data {
+    padding-top: 99px;
+    margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0;
+        padding-top: 80px;
+    }
+    @media screen and (min-width: 1200px) {
+        padding-top: 118px;
+    }
+}
+
+.hero__list {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hero__item__number, .hero__item__name {
+    text-align: right;
+}
+
+.hero__item__number {
+    color: var(--second-text-color);
+    font-weight: 900;
+    @media screen and (min-width: 768px) {
+        font-size: 28px;
+        line-height: 34px;
+       }
+    @media screen and (min-width: 1200px) {
+     font-size: 46px;
+     line-height: 46px;
+    }
+}
+
+.hero__item__name {
+    @media screen and (min-width: 768px) {
+        font-size: 8px;
+        line-height: 10px;
+       }
+    @media screen and (min-width: 1200px) {
+     font-size: 14px;
+     line-height: 17px;
+    }
+}
+
+.hero__button {
+
+    display: block;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: calc(15 / 12);
+    font-style: bold;
+    color: var(--second-text-color);
+
+    padding: 11px 26px;
+    margin-right: 12px;
+
+    border: 2px solid var(--yellow);
+    border-radius: 8px;
+    background-color: var(--background-color);
+    @media screen and (min-width: 1200px) {
+        margin-right: 34px;
+    }
+}
+
+.hero__button:hover {
+    border-color: var(--green);
+
+}
+
+.hero__button:focus {
+    @media screen and (min-width: 1200px) {
+    color: var(--first-text-color);
+}
+}
+
+
+.hero__link {
+    color: var(--yellow);
+    text-decoration: underline;
+}
+
+
+.hero__link:hover {
+    color: var(--green);
+}
+
+.hero__link:focus {
+    color: var(--first-text-color);
+}
+    
+.hero__order {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    flex-direction: column;
-}
-
-.ex {
-    font-weight: 800;
-      font-size: 44px;
-
-}
-
-.ex_two {
     margin-top: 20px;
-    font-weight: 500;
-    font-size: 14px;
-
+    
 }
