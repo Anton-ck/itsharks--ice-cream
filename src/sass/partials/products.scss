@@ -172,8 +172,8 @@
     background: url('../images/products/img1-mob200@2x.png'),
       linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)),
       #d9d9d9;
-            background-repeat: no-repeat;
-              background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   @media screen and (min-width: 1200px) {
@@ -192,52 +192,50 @@
           rgba(156, 190, 143, 0.7)
         ),
         #d9d9d9;
-              background-repeat: no-repeat;
-                background-size: contain;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
 
 .products__item:nth-child(2)::before {
   content: ' ';
-      background-size: cover;
-      background-position: center;
+  background-size: cover;
+  background-position: center;
   background: url('../images/products/img2-mob200.png'),
     linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
     #d9d9d9;
   box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
+  background-repeat: no-repeat;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background: url('../images/products/img2-mob200@2x.png'),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+      #d9d9d9;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: url('../images/products/img2-desk302.png'),
+      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+      #d9d9d9;
+    box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
     background-repeat: no-repeat;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background: url('../images/products/img2-mob200@2x.png'),
-          linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-          #d9d9d9;
-        background-repeat: no-repeat;
-        background-size: contain;
-  }
-
-  @media screen and (min-width: 1200px) {
-   background: url('../images/products/img2-desk302.png'),
-      linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-      #d9d9d9;
-        box-shadow: 0px 5.40397px 20.2649px rgba(153, 114, 23, 0.25);
-        background-repeat: no-repeat;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
       background: url('../images/products/img2-desk302@2x.png'),
-          linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
-          #d9d9d9;
-          background-repeat: no-repeat;
-          background-size: contain;
-
+        linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)),
+        #d9d9d9;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
-
 
 .products__item:last-child::before {
   content: ' ';
@@ -251,11 +249,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background: url('../images/products/img3-mob200@2x.png'),
-      linear-gradient(0deg, rgba(213, 117, 63, 0.7),
-        rgba(213, 117, 63, 0.7)),
+      linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
       #d9d9d9;
-      background-repeat: no-repeat;
-      background-size: contain;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
   @media screen and (min-width: 1200px) {
@@ -268,14 +265,10 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background: url('../images/products/img3-desk302@2x.png'),
-        linear-gradient(
-          0deg,
-          rgba(213, 117, 63, 0.7),
-          rgba(213, 117, 63, 0.7)
-        ),
+        linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)),
         #d9d9d9;
-        background-repeat: no-repeat;
-        background-size: contain;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
