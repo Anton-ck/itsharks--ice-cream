@@ -149,3 +149,27 @@ margin: 32px 0;
   @media screen and (min-width: 768px) {
     margin-top: 32px;
 }}
+
+.swiper-button-prev {
+  @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+  @media screen and (min-width: 768px){
+   color: #fcfcfc;
+  transform: translate(0, 25%);
+     
+  }
+}
+
+.swiper-button-next {
+  @media screen and (max-width: 767px){
+    display: none;
+    
+  }
+
+  @media screen and (min-width: 768px) {
+      color: #FCFCFC;
+        transform: translate(0, 25%);
+}
+}
