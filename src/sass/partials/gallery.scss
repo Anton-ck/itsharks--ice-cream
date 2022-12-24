@@ -1,4 +1,5 @@
 .gallery__wraper {
+
     position: relative;
     max-width: 100%;
     height: 130px;
@@ -11,16 +12,19 @@
 
     @media screen and (min-width: 768px) {
         max-width: 100%;
+
         height: 327px;
     }
 
     @media screen and (min-width: 1200px) {
+
         max-width: 100%;
-        height: 422px;
+
     }
 }
 
 .gallery__container {
+
     margin-top: -32px;
     margin-bottom: 80px;
 
@@ -64,6 +68,7 @@
     position: absolute;
     left: 0;
 
+
     animation-name: gallery;
         animation-timing-function: ease-in-out;
         animation-iteration-count: infinite;
@@ -84,3 +89,4 @@
           
     
 }
+
