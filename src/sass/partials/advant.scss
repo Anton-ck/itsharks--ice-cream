@@ -1,5 +1,5 @@
 .container {
-    background-color: #84A178;
+    background-color: var(#84A178);
     width: 100%;
     padding: 64px 45px;
     justify-content: center;
@@ -64,15 +64,13 @@
 }
 
 .advant__title {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: calc(44 / 36);
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(#FCFCFC);
     padding-top: 94px;
     margin-bottom: 16px;
 
@@ -90,15 +88,13 @@
 }
 
 .advant__text {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 170%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    color: #FCFCFC;
+    color: var(#FCFCFC);
     margin-bottom: 28px;
     width: 230px;
 
