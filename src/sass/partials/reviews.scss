@@ -18,7 +18,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background-image:
-      url('../images/reviews-bg/mobile2x.jpg');
+      url('../images/reviews-bg/mobile@2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
@@ -29,21 +29,21 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       background-image:
-        url('../images/reviews-bg/tablet2x.jpg');
+        url('../images/reviews-bg/tablet@2x.jpg');
     }
   }
 
-  @media screen and (min-width: 1200px) {
-    background-image:
-      url('../images/reviews-bg/desctop.jpg');
-
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+    @media screen and (min-width: 1200px) {
       background-image:
-        url('../images/reviews-bg/desctop2x.jpg');
+        url('../images/reviews-bg/desctop.jpg');
+  
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image:
+          url('../images/reviews-bg/desctop@2x.jpg');
+      }
     }
-  }
 }
 
 .swiper {
