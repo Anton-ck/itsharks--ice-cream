@@ -1,35 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mountains+of+Christmas:wght@700&display=swap');
-.hello {
-    color: #C30F16;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-    flex-direction: column;
-    height: 100vw;
+// @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mountains+of+Christmas:wght@700&display=swap');
+// .hello {
+//     color: #C30F16;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     margin: 40px 0;
+//     flex-direction: column;
+//     height: 100vw;
+// }
+
+// .santa {
+//     position: absolute;
+//     top: 40%;
+//     left: 350px;
+// }
+
+// .train {
+//     position: absolute;
+//     top: 0;
+//     left: 400px;
+
+// }
+
+// .ex {
+// font-family: 'Mountains of Christmas';
+// position: absolute;
+// top: 15%;
+// left: 150px;
+//     font-weight: 800;
+//       font-size: 48px;
+// transform: rotate(-10deg);
+
+// }
+.hero {
+  background-image: url(../images/hero/dotsmobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/dotstablet.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/dotsdecsk.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+}
+.hero__section {
+  display: flex;
+}
+.hero__title {
+  margin-top: 55px;
+  margin-left: 20px;
+  width: 247px;
+  height: 97px;
+
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 33px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 14px;
+    margin-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 45px;
+    margin-left: 18px;
+  }
+}
+.hero__info {
+  margin-left: auto;
+  @media (max-width: 768px) {
+    display: none;
+    margin-right: 32px;
+    margin-top: 28px;
+  }
 }
 
-.santa {
-    position: absolute;
-    top: 40%;
-    left: 350px;
+.list__txt {
+  width: 46px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  margin-right: 32px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  text-align: right;
+  color: #fcfcfc;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 16px;
+  }
+  // &:not(:last-child) {
+  //   margin-bottom: 20px;
+  // }
 }
 
-.train {
-    position: absolute;
-    top: 0;
-    left: 400px;
-    
+.list__number {
+  width: 32px;
+  margin-bottom: 4px;
+
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #131313;
 }
 
-.ex {
-font-family: 'Mountains of Christmas';    
-position: absolute;
-top: 15%;
-left: 150px;
-    font-weight: 800;
-      font-size: 48px;
-transform: rotate(-10deg);
-
+.hero__btn {
+  display: flex;
+  margin-top: 32px;
+  margin-left: 20px;
 }
 
+.btn__products {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  min-width: 108px;
+  padding: 11px 26px;
+
+  color: #000000;
+  background: none;
+
+  border: 2px solid rgba(248, 210, 78, 1);
+  border-radius: 8px;
+  &:hover,
+  &:focus {
+    border: 2px solid rgba(10, 136, 23, 1);
+  }
+}
+
+.btn__link {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration-line: underline;
+
+  background: none;
+
+  color: #f8d24e;
+  &:hover {
+    color: rgba(10, 136, 23, 1);
+  }
+  &:focus {
+    color: rgba(252, 252, 252, 1);
+  }
+}
+.hero__wrap {
+  position: relative;
+  display: flex;
+}
+
+.hero__icecream {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    width: 152px;
+    height: 152px;
+    margin: 12px 32px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 225px;
+    height: 225px;
+    margin-left: 42px 16px 65px 16px;
+  }
+}
+
+.hero__text {
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 768px) {
+    margin-top: 20px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 100px;
+  }
+}
+
+.text {
+  @media screen and (min-width: 768px) {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    color: #fcfcfc;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 200px;
+    height: 80px;
+    left: 257px;
+    top: 441px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.text__arrow {
+  margin-top: 24px;
+  width: 40px;
+  height: 16px;
+  fill: #fcfcfc;
+}
+
+.hero__shark {
+  margin-left: 50px;
+  max-width: 177px;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 40px;
+    max-width: 268px;
+    height: 329px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+    width: 268px;
+    max-height: 329px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 350px;
+
+    max-width: 456px;
+    max-height: 560px;
+  }
+}
