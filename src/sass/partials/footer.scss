@@ -1,25 +1,43 @@
-.footer__container {
-    padding-bottom: 40px;
+.footer {
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 
+    @media screen and (min-width: 768px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+.footer__container {
     @media screen and (min-width: 480px) {
         max-width: 100%;
         height: 130px;
+        margin-bottom: 80px;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
+        margin-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
         max-width: 100%;
-        padding-bottom: 60px;
+        margin-bottom: 60px;
+        display: flex;
+
     }
 }
 
 .footer__title--first-part {
     width: 504px;
     margin-bottom: 16px;
-    font-family: Montserrat;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
@@ -32,10 +50,11 @@
     @media screen and (min-width: 768px) {
         width: 320px;
         font-size: 26px;
+        display: flex;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 474px;
+        width: 504px;
         font-size: 30px;
     }
 }
@@ -74,6 +93,7 @@
 
     @media screen and (min-width: 1200px) {
         padding-top: 10px;
+        width: 338px;
     }
 }
 
@@ -92,9 +112,7 @@
     transition-duration: var(--time-transition);
     transition-timing-function: var(--typical-cubic);
 
-    // &:hover {
-    //     background: ;
-    // }
+
     &:not(:last-child) {
         margin-right: 28px;
     }
@@ -121,14 +139,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    //  :focus {
-    //     background-color: var(--);
-    // }
+
 }
 
-// .social-network__icon {
-//     fill: var(--);
-// }
+
 .social-network__icon--tel {
     margin-right: 1px;
 }
@@ -148,14 +162,11 @@
     }
 
     @media screen and (min-width: 1200px) {
-        width: 474px;
         font-size: 16px;
     }
 }
 
 .contact__link {
-    font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.2;
@@ -178,6 +189,9 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
+    border-top: 1px solid #E1E1E1;
+    outline: 1px red solid ;
+
 
     @media screen and (min-width: 768px) {
         padding-top: 8px;
@@ -188,8 +202,7 @@
 .contact__copyright {
     width: 255px;
     color: #7A7A7A;
-    font-family: 'Montserrat';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 12px;
     line-height: 1.5;
@@ -204,3 +217,5 @@
 .decor-line {
     border-top: 1px solid #E1E1E1;
 }
+
+
