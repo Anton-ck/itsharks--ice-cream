@@ -1,0 +1,343 @@
+
+
+/*-------------------- Mobile --------------------*/
+/*------------- address -------------*/
+/*Настройки контента*/
+.container.address {
+  max-width: 280px;
+}
+
+.text__address {
+  color: var(--second-text-color);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+}
+
+.container.address {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.li__content.address {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  color: var(--lite-orange);
+}
+
+.li__content.address:hover,
+.li__content.address:focus {
+  text-decoration: underline;
+}
+
+.li__content {
+  color: var(--second-text-color);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+}
+
+.address__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  width: 80px;
+  height: 22px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.address__list:not(:last-child) {
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 24px;
+}
+
+.li__content.time:last-child {
+  margin-bottom: 24px;
+}
+
+/*
+    .li__content.time:first-child {
+      margin-bottom: 8px;
+    }
+    */
+/* Особое */
+.li__content.a {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 183%;
+  letter-spacing: 0.04em;
+  margin-top: 8px;
+  margin-bottom: 24px;
+}
+
+.li__content.time.c {
+  margin-bottom: 8px;
+}
+
+.li__content.c {
+  margin-bottom: 6px;
+}
+
+.address__label.c {
+  height: 22px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--yellow);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/*---------*/
+.li__content.time {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: var(--gray-color);
+}
+
+.address__link {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  color: var(--second-text-color);
+}
+
+/*---------*/
+/*блоки*/
+.address__list__contain {
+  background-color: var(--first-text-color);
+  border-radius: 24px;
+  text-align: left;
+  padding: 32px;
+  margin-bottom: 16px;
+  max-width: 280px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+
+/*---------*/
+/*Кнопки*/
+.contacts__btn__list {
+  align-items: center;
+  text-align: center;
+}
+
+.contacts__btn {
+  width: 196px;
+  height: 42px;
+  background-color: var(--yellow);
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.contacts__btn:last-child {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  margin-top: 16px;
+}
+
+.contacts__btn__svg {
+  margin-left: 7px;
+}
+
+.contacts__btn:first-child:hover {
+  background-color: var(--green);
+}
+
+.contacts__btn:first-child:focus {
+  background-color: var(--green);
+  color: var(--first-text-color);
+}
+
+.contacts__btn.franchise:hover {
+  border-color: var(--green);
+}
+
+.contacts__btn.franchise:focus {
+  border-color: var(--green);
+  color: var(--first-text-color);
+}
+
+.contacts__btn:first-child:active {
+  background-color: var(--gray-color);
+}
+
+.contacts__btn.franchise:active {
+  border-color: var(--gray-color);
+}
+
+/*---------*/
+/*------------------------------------------------*/
+/*-------------------- Tablet --------------------*/
+@media screen and (min-width: 768px) {
+  .container.address {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 16px;
+    max-width: 768px;
+  }
+
+  .address__list__contain {
+    padding: 24px;
+    margin-bottom: 0px;
+    width: 224px;
+  }
+
+  /* label */
+  .address__label {
+    width: 73px;
+    height: 30px;
+    margin-bottom: 32;
+  }
+
+  .address__label.c {
+    width: 138px;
+    height: 30px;
+    margin-bottom: 32px;
+  }
+
+  /*---------*/
+  .address__label {
+    margin-bottom: 32px;
+  }
+
+  .address__list:not(:last-child) {
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 32px;
+  }
+
+  .li__content.time:last-child {
+    margin-bottom: 32px;
+  }
+
+  /*
+      .li__content.time:first-child {
+        margin-bottom: 8px;
+      }
+      */
+  /* Особое */
+  .li__content.a {
+    margin-top: 12px;
+    margin-bottom: 32px;
+    max-width: 150px;
+  }
+
+  .li__content.time.c {
+    margin-bottom: 8px;
+  }
+
+  .li__content.c {
+    margin-bottom: 4px;
+  }
+
+  /*---------*/
+  .contacts__btn:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+/*------------------------------------------------*/
+/*-------------------- Desktop --------------------*/
+@media screen and (min-width: 1200px) {
+  .container.address {
+    gap: 32px;
+    max-width: 1000px;
+  }
+
+  .text__address {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  .li__content {
+    color: var(--second-text-color);
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  /* Особое */
+  .li__content.a {
+    max-width: 290px;
+    max-height: 53px;
+  }
+
+  #address__link__id {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 183%;
+    letter-spacing: 0.04em;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    max-width: 290px;
+  }
+
+  /*---------*/
+  .li__content.time {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+  }
+
+  .address__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+  }
+
+  /*---------*/
+  /*блоки*/
+  .address__list__contain {
+    width: 368px;
+  }
+
+
+  .contacts__btn:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  /*---------*/
+}
+
+/*# sourceMappingURL=css.css.map */

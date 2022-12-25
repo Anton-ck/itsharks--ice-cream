@@ -1,35 +1,261 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Mountains+of+Christmas:wght@700&display=swap');
-.hello {
-    color: #C30F16;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 40px 0;
-    flex-direction: column;
-    height: 100vw;
+.hero__container {
+  background-image: url(../images/hero/dotsmobile.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/dotstablet.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/dotsdecsk.png);
+  }
 }
 
-.santa {
+.hero__section {
+  display: flex;
+  padding: 55px 0 0 4px;
+
+  @media screen and (min-width: 768px) {
+    padding: 14px 0 0 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 45px 0 0 0;
+  }
+}
+
+.hero__title {
+  font-family: 'Seymour One';
+  width: 247px;
+  height: 97px;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--first-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 38px;
+    width: 367px;
+    height: 144px;
+  }
+}
+
+.hero__info {
+  margin-left: auto;
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.list__txt {
+  width: 48px;
+  margin-top: 12px;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  color: var(--first-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.21;
+    width: 79px;
+    margin-top: 0;
+  }
+}
+
+.list__txt:first-child {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+  }
+}
+
+.list__number {
+  width: 32px;
+  margin-bottom: 4px;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--second-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 46px;
+    line-height: 1.22;
+  }
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 12px;
+  align-items: baseline;
+  margin-top: 32px;
+  padding-left: 4px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+    padding-left: 0px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 0;
+    gap: 34px;
+  }
+}
+
+.btn {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 11px 26px;
+  color: #000000;
+  background: none;
+  border: 2px solid var(--yellow);
+  border-radius: 8px;
+
+  &:hover {
+    border: 2px solid var(--green);
+  }
+
+  &:focus {
+    border: 2px solid var(--green);
+    color: var(--first-text-color);
+  }
+}
+
+.btn--link {
+  padding: 0;
+  text-decoration-line: underline;
+  border: none;
+  color: var(--yellow);
+
+  &:hover {
+    color: var(--green);
+    border: none;
+  }
+  &:focus {
+    color: var(--first-text-color);
+    border: none;
+  }
+}
+
+.hero__wrap {
+  position: relative;
+  display: flex;
+  margin-top: 19px;
+
+  @media screen and (max-width: 767px) {
+    height: 217px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 42px;
+    height: 290px;
+  }
+}
+
+.hero__icecream {
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
     position: absolute;
-    top: 40%;
-    left: 350px;
-}
-
-.train {
+    bottom: 12px;
+    left: 0;
+    width: 152px;
+    height: 152px;
+  }
+  @media screen and (min-width: 1200px) {
     position: absolute;
-    top: 0;
-    left: 400px;
-    
+    bottom: 65px;
+    left: 0;
+    width: 225px;
+    height: 225px;
+  }
 }
 
-.ex {
-font-family: 'Mountains of Christmas';    
-position: absolute;
-top: 15%;
-left: 150px;
-    font-weight: 800;
-      font-size: 48px;
-transform: rotate(-10deg);
+.hero__text {
+  @media (max-width: 767px) {
+    display: none;
+  }
 
+  @media (min-width: 768px) {
+    margin-top: 39px;
+    margin-left: 184px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 70px;
+    margin-left: 241px;
+  }
 }
 
+.text {
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.41;
+    color: var(--first-text-color);
+    width: 150px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 220px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+.text__arrow {
+  margin-top: 12px;
+  margin-bottom: 24px;
+  fill: var(--first-text-color);
+  transition: transform 100ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 100ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+    margin-bottom: 103px;
+  }
+
+  &:hover,
+  &:focus {
+    fill: var(--yellow);
+    transform: scale(1.4);
+  }
+}
+
+.hero__shark {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  max-width: 177px;
+
+  @media screen and (min-width: 768px) {
+    left: 50%;
+    max-width: 268px;
+    max-height: 329px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    left: 46%;
+    max-width: 456px;
+    max-height: 560px;
+  }
+}

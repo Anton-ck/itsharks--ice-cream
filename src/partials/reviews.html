@@ -1,20 +1,74 @@
 <!-- Slider main container -->
-<div class="swiper">
-    <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
+<div class="swiper__section">
+  <div class="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide">Slide 1</div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+
+        <div class="swiper-slide">
+          <img class="swiper__image"
+            srcset="./images/reviews/emily.jpg, ./images/reviews/emily@2x.jpg"
+            src="./images/reviews/emily.jpg" alt="Emily" loading="lazy" width="85" height="85"/>
+
+          <div class="swiper__bg">
+            <p class="swiper__reviews">
+              I love visiting your cafe. You prepare the most delicious ice
+              cream in Los Angeles! In addition, you have beautiful serving,
+              cozy atmosphere and polite staff.
+            </p>
+          </div>
+          <p class="swiper__name">Emily, Los Angeles</p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="swiper__image"
+
+            srcset="./images/reviews/bryan.jpg, ./images/reviews/bryan@2x.jpg"
+            src="./images/reviews/bryan.jpg"
+            alt="Bryan"
+            loading="lazy" width="85" height="85"/>
+
+          <div class="swiper__bg">
+            <p class="swiper__reviews">
+              Every day we come to you with friends after classes in college. We
+              love your ice cream and casual atmosphere!
+            </p>
+          </div>
+          <p class="swiper__name">Bryan, New-York</p>
+        </div>
+        <div class="swiper-slide">
+          <img
+            class="swiper__image"
+
+            srcset="./images/reviews/diana.jpg, ./images/reviews/diana@2x.jpg"
+            src="./images/reviews/diana.jpg"
+            alt="Diana"
+            loading="lazy" width="85" height="85"
+
+          />
+          <div class="swiper__bg">
+            <p class="swiper__reviews">
+              Ice cream is my passion! I love your chocolate hazelnut ice cream!
+              And I really like the excellent service - always served politely
+              and quickly!
+            </p>
+          </div>
+          <p class="swiper__name">Diana, Chicago</p>
+        </div>
         ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination" aria-label="swiper"></div>
+
+       <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev" aria-label="swipe prev"></div>
+    <div class="swiper-button-next" aria-label="swipe next"></div>
+
+
+      <!-- If we need scrollbar -->
+      <!-- <div class="swiper-scrollbar"></div>
+</div> -->
     </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-
-    <!-- If we need navigation buttons -->
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-
-    <!-- If we need scrollbar -->
-    <div class="swiper-scrollbar"></div>
+  </div>
 </div>
