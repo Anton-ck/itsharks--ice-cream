@@ -1,38 +1,51 @@
 <section class="hero">
-  <div class="hero__section">
-    <h1 class="hero__title">ice cream made with passion</h1>
+  <div class="container hero__container">
+    <div class="hero__section">
+      <h1 class="hero__title">ice cream made with passion</h1>
 
-    <ul class="hero__info">
-      <li class="list__txt">
-        <span class="list__number">16</span>
-        cafes
-      </li>
-      <li class="list__txt">
-        <span class="list__number">23</span>
-        food truck
-      </li>
+      <ul class="hero__info">
+        <li class="list__txt">
+          <span class="list__number">16</span>
+          cafes
+        </li>
+        <li class="list__txt">
+          <span class="list__number">23</span>
+          food truck
+        </li>
+      </ul>
+
+    </div>
+
+    <ul class="hero__buttons">
+      <li><a class="btn" href="#products">Products</a></li>
+      <li><a class="btn btn--link" href="#about">How it's made?</a></li>
     </ul>
 
-  </div>
-
-  <div class="hero__btn">
-    <button class="btn__products" type="button" id="products">Products</button>
-    <button class="btn__link" type="button" id="How it’s made?">
-      How it’s made?
-    </button>
-  </div>
-
-  <div class="hero__wrap">
-    <img class="hero__icecream" src="./images/hero/platetablet.png" alt="plate of ice-cream" />
-    <div class="hero__text">
-      <p class="text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et
-      </p>
-      <svg class="text__arrow" width="40" height="16">
-        <use href="./images/icons/icons.svg#arrow"></use>
-      </svg>
+    <div class="hero__wrap">
+      <img class="hero__icecream" srcset="
+        ./images/hero/plate152.webp 152w, 
+        ./images/hero/plate152@2x.webp 304w,
+        ./images/hero/plate225.webp 225w,
+        ./images/hero/plate225@2x.webp 450w" sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
+        src="./images/hero/plate152.png" alt="plate of ice-cream" loading="lazy" />
+      <div class="hero__text">
+        <p class="text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et
+        </p>
+        <svg class="text__arrow" width="40" height="16">
+          <use href="./images/icons/icons.svg#arrow"></use>
+        </svg>
+      </div>
+      <img class="hero__shark" srcset="
+        ./images/hero/shark.webp 177w, 
+        ./images/hero/shark@2x.webp 354w,
+        ./images/hero/shark.webp 268w, 
+        ./images/hero/shark@2x.webp 536w,
+        ./images/hero/shark.webp 456w, 
+        ./images/hero/shark@2x.webp 912w"
+        sizes="(min-width: 1200px) 456px, (min-width: 768px) 268px, (min-width: 480px) 177px, 100vw"
+        src="./images/hero/shark.png" alt="shark with ice-cream" loading="lazy" />
     </div>
-    <img class="hero__shark" src="./images/hero/shark.png" alt="shark with ice-cream" />
   </div>
 </section>
