@@ -1,0 +1,202 @@
+.product-modal {
+  padding: 28px 20px;
+  max-height: 968px;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 40px;
+    max-height: 996px;
+  }
+}
+
+.product-modal__title {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
+}
+
+.bg-gradient {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 29px;
+}
+
+.div-image {
+  background: url('../images/products/img3-mob200.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/products/img3-mob200@2x.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background: url('../images/products/img3-desk320.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/products/img3-desk320@2x.png');
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+}
+
+.div-image::after {
+  content: ' ';
+  position: absolute;
+  z-index: -1;
+  top: 7px;
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7),
+      rgba(156, 190, 143, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 5.26027px 19.726px rgba(10, 136, 23, 0.25);
+}
+
+.thumb__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
+
+.thumb__item {
+  border: 2px solid #9cbe8f;
+  border-radius: 40px;
+  width: 53px;
+  height: 72px;
+  padding-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 65px;
+    height: 90px;
+    padding-bottom: 14px;
+  }
+}
+
+.thumb__div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 7px;
+
+  margin-right: auto;
+  margin-left: auto;
+
+  background: #9cbe8f;
+  border: 2px solid #9cbe8f;
+  box-shadow: 0px 6px 20px rgba(10, 136, 23, 0.25);
+  border-radius: 50%;
+  width: 43px;
+  height: 43px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+
+  @media screen and (min-width: 768px) {
+    width: 53px;
+    height: 53px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+  }
+}
+
+.thumb__number {
+  font-size: 10px;
+  line-height: 2.8;
+  color: #131313;
+
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 2.33;
+  }
+}
+
+.thumb__text {
+  font-size: 10px;
+  line-height: 1.2;
+
+  text-align: center;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.25;
+  }
+}
+
+.product__text {
+  font-size: 20px;
+  line-height: 1.4;
+  margin-bottom: 24px;
+  text-align: center;
+
+  color: #131313;
+}
+
+.product__list {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.ingridient__list--left {
+  margin-right: auto;
+}
+
+.ingridient__list--right {
+  margin-left: auto;
+  text-align: right;
+}
+
+.ingridient__item {
+  font-size: 14px;
+  line-height: 1.76;
+
+  color: #131313;
+}
+
+.ingridient__item:not(:last-child) {
+  margin-bottom: 11px;
+}
+
+@media screen and (max-width: 767px) {
+  .product-modal__title {
+    width: 142px;
+  }
+  .product-modal__input {
+    padding: 11px 10.43px;
+  }
+}
+
+.product-modal__input:not(:last-child) {
+  margin-bottom: 16px;
+}
