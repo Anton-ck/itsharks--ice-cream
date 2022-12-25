@@ -54,37 +54,54 @@
   }
 }
 
-// .about__image-container {
-//   position: relative;
+.about__image-container {
+  min-height: 278px;
+  min-width: 278px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 40px;
 
-//   &:before {
-//     content: ' ';
-//     position: absolute;
-//     top: -22px;
-//     width: 278px;
-//     height: 278px;
-//     border-radius: 50%;
-//     background: linear-gradient(
-//         0deg,
-//         rgba(248, 210, 78, 0.7),
-//         rgba(248, 210, 78, 0.7)
-//       ),
-//       #d9d9d9;
-//     box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
-//   }
+  @media screen and (min-width: 768px) {
+    margin-right: 38px;
+    min-height: 330px;
+    min-width: 330px;
+  }
 
-//   @media screen and (min-width: 768px) {
-//     top: -26px;
-//     width: 330px;
-//     height: 330px;
-//   }
+  @media screen and (min-width: 1200px) {
+    margin-right: 109px;
+    min-height: 490px;
+    min-width: 490px;
+  }
 
-//   @media screen and (min-width: 1200px) {
-//     top: -39px;
-//     width: 490px;
-//     height: 490px;
-//   }
-// }
+  &:before {
+    content: ' ';
+    position: absolute;
+    top: -22px;
+    width: 278px;
+    height: 278px;
+    border-radius: 50%;
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7),
+        rgba(248, 210, 78, 0.7)
+      ),
+      #d9d9d9;
+    box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+    @media screen and (min-width: 768px) {
+      top: 72px;
+      width: 330px;
+      height: 330px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      top: 59px;
+      width: 490px;
+      height: 490px;
+    }
+  }
+}
 
 @media screen and (min-width: 768px) {
   .about__content {
@@ -93,9 +110,10 @@
 }
 
 .about__image {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   margin-top: 0;
   margin-left: auto;
@@ -104,8 +122,8 @@
 
   // tablet
   @media screen and (min-width: 768px) {
-    margin-right: 38px;
     margin-top: 98px;
+    margin-right: 38px;
     margin-bottom: 0;
     margin-left: 0;
   }
@@ -144,7 +162,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.94;
-    max-width: 100%;
+    max-width: 463px;
   }
 }
 
