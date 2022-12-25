@@ -1,34 +1,19 @@
-.footer {
-    @media screen and (min-width: 480px) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
-    @media screen and (min-width: 768px) {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
-}
-
 .footer__container {
-    @media screen and (min-width: 480px) {
         max-width: 100%;
-        height: 130px;
-        margin-bottom: 80px;
-    }
+        padding: 5px 0;
+        margin-top: 60px;
+        margin-bottom: 40px;
+
 
     @media screen and (min-width: 768px) {
         display: flex;
+        margin-top: 40px;
         margin-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
-        max-width: 100%;
+        padding: 10px 0;
+        margin-top: 120px;
         margin-bottom: 60px;
         display: flex;
 
@@ -45,7 +30,7 @@
     text-align: left;
     text-transform: uppercase;
     /* цвет добавить переменную var(--)*/
-    color: #FCFCFC;
+    color: var(--first-text-color);
 
     @media screen and (min-width: 768px) {
         width: 320px;
@@ -68,7 +53,7 @@
     letter-spacing: 0.04em;
     text-align: left;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--first-text-color);
 
     @media screen and (min-width: 768px) {
         font-size: 48px;
@@ -83,6 +68,7 @@
 
 .footer__contack-blok {
     margin-top: 40px;
+    // margin-bottom: 40px;
 
     @media screen and (min-width: 768px) {
         width: 268px;
@@ -134,13 +120,25 @@
 }
 
 .social-network__link {
-    height: 32px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    transition: background-color var(--yellow);
+    width: 34px;
+    height: 34px;
 
+    :focus {
+        background-color: var(--background-color);
+    }
 }
+
+.social-network__icon {
+    fill: var(--background-color);
+}
+
 
 
 .social-network__icon--tel {
@@ -148,13 +146,12 @@
 }
 
 .contact__text {
-    font-family: 'Montserrat';
-    font-style: normal;
+
     font-weight: 700;
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #131313;
+    color: var(--second-text-color);
     text-align: right;
 
     @media screen and (min-width: 768px) {
@@ -171,7 +168,7 @@
     font-size: 12px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--white);
     text-align: right;
     text-decoration: none;
 
@@ -189,13 +186,12 @@
     padding-bottom: 20px;
     display: flex;
     justify-content: center;
-    border-top: 1px solid #E1E1E1;
-    outline: 1px red solid ;
+    border-top: 1px solid var(--first-text-color);
 
 
     @media screen and (min-width: 768px) {
-        padding-top: 8px;
-        padding-bottom: 8px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 
@@ -214,8 +210,5 @@
     }
 }
 
-.decor-line {
-    border-top: 1px solid #E1E1E1;
-}
 
 
