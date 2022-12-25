@@ -1,6 +1,6 @@
 .footer__container {
         max-width: 100%;
-        padding: 5px 0;
+        padding: 5px 20px;
         margin-top: 60px;
         margin-bottom: 40px;
 
@@ -12,7 +12,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        padding: 10px 0;
+        padding: 10px 16px;
         margin-top: 120px;
         margin-bottom: 60px;
         display: flex;
