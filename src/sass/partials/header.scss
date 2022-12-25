@@ -1,3 +1,7 @@
+.page-header__content.container {
+  position: relative;
+}
+
 .page-header {
   &__content {
     padding: 12px 20px 0 20px;
@@ -18,11 +22,7 @@
     margin-right: 308px;
   }
   &__button {
-    position: absolute;
-    z-index: 999;
-    top: 24px;
-    right: 32px;
-    display: flex;
+    // display: flex;
     align-items: center;
     justify-content: center;
     font-family: inherit;
@@ -39,9 +39,18 @@
     @media screen and (max-width: 767px) {
       display: none;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      position: absolute;
+      z-index: 999;
+      top: 24px;
+      right: 32px;
+    }
     @media screen and (min-width: 1200px) {
+      margin-left: auto;
+      position: absolute;
       top: 28px;
-      right: 16px;
+      right: 0;
     }
   }
   &__button:hover {
