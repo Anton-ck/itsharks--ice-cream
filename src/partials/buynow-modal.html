@@ -1,0 +1,68 @@
+<div class="backdrop hidden" data-modal-buy-now>
+  <div class="buy-modal modal">
+    <button
+      class="buy-modal__button modal__close-button button"
+      data-modal-close-buy-now
+    >
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/icons/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="buy-modal__title modal__title">Buy now</h3>
+
+    <ul class="buy-modal__list">
+      <li class="buy-modal__item">
+        <div class="buy-modal__thumb">
+          <div class="buy-modal__image buy-modal__image--first"></div>
+          <p class="buy-modal__name">ice cream</p>
+        </div>
+      </li>
+      <li class="buy-modal__item">
+        <div class="buy-modal__thumb">
+          <div class="buy-modal__image buy-modal__image--second"></div>
+          <p class="buy-modal__name">ice coffee</p>
+        </div>
+      </li>
+      <li class="buy-modal__item">
+        <div class="buy-modal__thumb">
+          <div class="buy-modal__image buy-modal__image--third"></div>
+          <p class="buy-modal__name">milkshake</p>
+        </div>
+      </li>
+    </ul>
+    <form name="buy-modal__form" class="modal__form buy-modal__form">
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="buy-modal__input modal__input"
+        placeholder="Name"
+      />
+      <!-- <div class="franchise__div">
+        <label for="name" name="name-user" class="franchise__label">Name</label>
+      </div> -->
+      <input
+        type="tel"
+        name="tel"
+        id="tel"
+        class="buy-modal__input modal__input"
+        placeholder="Phone"
+      />
+      <!-- <div class="franchise__div">
+        <label for="tel" name="tel-user" class="franchise__label">Phone</label>
+      </div> -->
+      <textarea
+        name="comment"
+        id="comment"
+        rows="4"
+        class="buy-modal__input modal__input textarea"
+        placeholder="Comment"
+      ></textarea>
+      <button type="submit" class="buy-modal__button modal__button button">
+        Submit
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="./js/modal-buy-now.js"></script>

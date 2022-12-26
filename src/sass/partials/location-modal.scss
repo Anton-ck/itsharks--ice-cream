@@ -1,0 +1,34 @@
+.location-modal {
+  padding: 28px;
+  max-height: 365px;
+
+  // @media screen and (max-width: 767px) {
+  //   max-width: 300px;
+  //   max-height: 674px;
+  //   overflow: scroll;
+  // }
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 60px;
+    max-height: 458px;
+  }
+}
+
+.location-modal__title {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.location__div {
+  border-radius: 10px;
+  width: 224px;
+  height: 199px;
+
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    height: 260px;
+  }
+}
