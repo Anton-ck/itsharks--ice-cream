@@ -1,6 +1,11 @@
 .about {
   padding-top: 61px;
-  padding-bottom: 64px;
+  padding-bottom: 50px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .about__label {
@@ -166,14 +171,14 @@
   }
 }
 
-about__paragraph--first {
+.about__paragraph--first {
   // desktop
   @media screen and (min-width: 1200px) {
     font-size: 16px;
   }
 }
-about__paragraph--first,
-about__paragraph--second {
+.about__paragraph--first,
+.about__paragraph--second {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.76;
@@ -182,7 +187,7 @@ about__paragraph--second {
   color: var(--first-text-color);
 }
 
-about__paragraph--first {
+.about__paragraph--first {
   // desktop
   @media screen and (min-width: 1200px) {
     font-size: 16px;

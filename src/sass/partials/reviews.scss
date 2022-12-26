@@ -1,6 +1,7 @@
 .swiper__section {
+  // position: relative;
   padding-top: 178px;
-  padding-bottom: 40px;
+  padding-bottom: 400px;
 
   @media screen and (min-width: 768px) {
     padding-top: 283px;
@@ -9,64 +10,58 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 464px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
   }
 
   background-image: url('../images/reviews-bg/mobile.jpg');
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image:
-      url('../images/reviews-bg/mobile@2x.jpg');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/reviews-bg/mobile@2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
-    background-image:
-      url('../images/reviews-bg/tablet.jpg');
+    background-image: url('../images/reviews-bg/tablet.jpg');
 
     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-      background-image:
-        url('../images/reviews-bg/tablet@2x.jpg');
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('../images/reviews-bg/tablet@2x.jpg');
     }
   }
 
-    @media screen and (min-width: 1200px) {
-      background-image:
-        url('../images/reviews-bg/desctop.jpg');
-  
-      @media (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 1200px) {
+    background-image: url('../images/reviews-bg/desctop.jpg');
+
+    @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-        background-image:
-          url('../images/reviews-bg/desctop@2x.jpg');
-      }
+      background-image: url('../images/reviews-bg/desctop@2x.jpg');
     }
+  }
 }
 
 .swiper {
   width: 280px;
 
   @media screen and (min-width: 768px) {
-      width: 705px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      width: 968px;
-    }
-  
+    width: 705px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 968px;
+  }
 }
 
 .swiper__bg {
   position: relative;
-  background-color: #84A178;
-border-radius: 24px;
-height: 256px;
-margin: 32px 0;
+  background-color: #84a178;
+  border-radius: 24px;
+  height: 256px;
+  margin: 32px 0;
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     width: 705px;
     height: 138px;
   }
@@ -79,57 +74,51 @@ margin: 32px 0;
 
 .swiper__reviews {
   font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 255%;
-   
-    text-align: center;
-    justify-content: center;
-    letter-spacing: 0.04em;
-  
-    color: #FCFCFC;
-    position: absolute;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
 
-    top: 50%;
-    transform: translate(0, -50%);
-    
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.04em;
 
-    padding-right: 39px;
-    padding-left: 39px;
-    // padding-right: 39px;
-    
-    
-    @media screen and (min-width: 768px) {
-        font-size: 14px;
-          line-height: 186%;
-      }
-    
-      @media screen and (min-width: 1200px) {
-        font-size: 16px;
-          line-height: 186%;
-        }
-      }
+  color: #fcfcfc;
+  position: absolute;
 
+  top: 50%;
+  transform: translate(0, -50%);
 
- .swiper__name {
-  font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
+  padding-right: 39px;
+  padding-left: 39px;
+  // padding-right: 39px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
     line-height: 186%;
-  
-    text-align: center;
-  
-    color: #131313;
-    margin-bottom: 32px;
+  }
 
-    @media screen and (min-width: 768px) {
-        font-size: 16px; 
-        
-         
-      }
-    
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 186%;
+  }
+}
+
+.swiper__name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 186%;
+
+  text-align: center;
+
+  color: #131313;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .swiper__image {
@@ -141,35 +130,34 @@ margin: 32px 0;
 }
 
 .swiper-pagination-bullet {
-  background-color: #84A178;
+  background-color: #84a178;
   width: 12px;
   height: 12px;
   margin-top: 12px;
 
   @media screen and (min-width: 768px) {
     margin-top: 32px;
-}}
+  }
+}
 
 .swiper-button-prev {
   @media screen and (max-width: 767px) {
-      display: none;
-    }
+    display: none;
+  }
 
-  @media screen and (min-width: 768px){
-   color: #fcfcfc;
-  transform: translate(0, 25%);
-     
+  @media screen and (min-width: 768px) {
+    color: #fcfcfc;
+    transform: translate(0, 25%);
   }
 }
 
 .swiper-button-next {
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: 767px) {
     display: none;
-    
   }
 
   @media screen and (min-width: 768px) {
-      color: #FCFCFC;
-        transform: translate(0, 25%);
-}
+    color: #fcfcfc;
+    transform: translate(0, 25%);
+  }
 }
