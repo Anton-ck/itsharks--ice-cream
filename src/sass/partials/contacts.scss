@@ -91,11 +91,7 @@
 }
 
 .contacts-card__border {
-  // height: 0px;
-  // background-color: #E1E1E1;
-  // display: block;
   border-bottom: 1px solid #e1e1e1;
-  // margin: 24px 0;
   padding-bottom: 24px;
 
   @media screen and (min-width: 768px) {
@@ -220,7 +216,6 @@
 .contacts__btn-icon {
   height: 12px;
   width: 12px;
-  fill: #0000;
   stroke: currentColor;
   justify-content: center;
   align-items: center;
