@@ -6,31 +6,31 @@
   background-size: cover;
   background-position: center;
 
-  background-image: url('../images/products/bcg-mob.jpg');
+  background-image: url('../images/products/bcg-mob.webp');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/products/bcg-mob@2x.jpg');
+    background-image: url('../images/products/bcg-mob@2x.webp');
   }
 
   @media screen and (min-width: 481px) {
-    background-image: url('../images/products/bcg-tab.jpg');
+    background-image: url('../images/products/bcg-tab.webp');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/bcg-tab@2x.jpg');
+      background-image: url('../images/products/bcg-tab@2x.webp');
     }
   }
 
   @media screen and (min-width: 769px) {
-    background-image: url('../images/products/bcg-desk.jpg');
+    background-image: url('../images/products/bcg-desk.webp');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/products/bcg-desk@2x.jpg');
+      background-image: url('../images/products/bcg-desk@2x.webp');
     }
   }
 }
