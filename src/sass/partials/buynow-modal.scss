@@ -424,6 +424,19 @@
     line-height: 1.21;
   }
 }
+
+.modal__button:hover {
+  background-color: var(--green);
+}
+
+.modal__button:focus {
+  background-color: var(--green);
+  color: var(--first-text-color);
+}
+
+.modal__button:active {
+  background-color: #ababab;
+}
 // @media screen and (max-width: 767px) {
 //   .buy-modal__button {
 //     margin-top: 26px;
