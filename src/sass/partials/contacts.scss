@@ -61,169 +61,169 @@
   }
 }
 
-// .contacts__title {
-//   display: inline;
-//   color: var(--second-text-color);
-//   background: var(--yellow);
-//   border-radius: 4px;
-//   padding: 0.5px 22px;
-// }
+.contacts__title {
+  display: inline;
+  color: var(--second-text-color);
+  background: var(--yellow);
+  border-radius: 4px;
+  padding: 0.5px 22px;
+}
 
-// .contacts-card__item {
-//   padding-top: 24px;
-//   @media screen and (min-width: 768px) {
-//     padding-top: 32px;
-//   }
-// }
-// .contacts-card__item > .contacts-card__text:nth-child(2n) {
-//   color: #ababab;
-// }
+.contacts-card__item {
+  padding-top: 24px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+}
+.contacts-card__item > .contacts-card__text:nth-child(2n) {
+  color: #ababab;
+}
 
-// .address__text {
-//   line-height: 1.86;
-//   color: var(--lite-orange);
-//   font-style: normal;
-//   margin-top: 8px;
+.address__text {
+  line-height: 1.86;
+  color: var(--lite-orange);
+  font-style: normal;
+  margin-top: 8px;
 
-//   &:hover {
-//     text-decoration: underline;
-//   }
-// }
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
-// .contacts-card__border {
-//   // height: 0px;
-//   // background-color: #E1E1E1;
-//   // display: block;
-//   border-bottom: 1px solid #e1e1e1;
-//   // margin: 24px 0;
-//   padding-bottom: 24px;
+.contacts-card__border {
+  // height: 0px;
+  // background-color: #E1E1E1;
+  // display: block;
+  border-bottom: 1px solid #e1e1e1;
+  // margin: 24px 0;
+  padding-bottom: 24px;
 
-//   @media screen and (min-width: 768px) {
-//     padding-bottom: 26px;
-//   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 26px;
+  }
 
-//   @media screen and (min-width: 1200px) {
-//     padding-bottom: 32px;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 32px;
+  }
+}
 
-// .contacts-card__title {
-//   padding-bottom: 10px;
-// }
+.contacts-card__title {
+  padding-bottom: 10px;
+}
 
-// .contacts-card__link {
-//   display: inline;
-//   font-style: normal;
-//   color: var(--second-text-color);
-// }
+.contacts-card__link {
+  display: inline;
+  font-style: normal;
+  color: var(--second-text-color);
+}
 
-// .contacts-btn__list {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   margin-top: 32px;
-//   margin-top: 39px;
+.contacts-btn__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  margin-top: 39px;
 
-//   & > li:nth-child(2) {
-//     margin-top: 16px;
-//   }
+  & > li:nth-child(2) {
+    margin-top: 16px;
+  }
 
-//   @media screen and (min-width: 768px) {
-//     display: flex;
-//     flex-direction: row;
-//     margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
 
-//     & > li:nth-child(2) {
-//       margin-left: 16px;
-//       margin-top: 0;
-//     }
-//   }
+    & > li:nth-child(2) {
+      margin-left: 16px;
+      margin-top: 0;
+    }
+  }
 
-//   @media screen and (min-width: 1200px) {
-//     margin-top: 64px;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    margin-top: 64px;
+  }
+}
 
-// .contacts__btn {
-//   width: 196px;
-//   height: 42px;
-//   border-radius: 10px;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 12px 0;
+.contacts__btn {
+  width: 196px;
+  height: 42px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
 
-//   margin-left: auto;
-//   margin-right: auto;
-//   font-size: 14px;
-//   font-weight: 600;
-//   line-height: 1.29;
-//   display: flex;
-//   cursor: pointer;
-//   border: none;
-//   outline: transparent;
-// }
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+  display: flex;
+  cursor: pointer;
+  border: none;
+  outline: transparent;
+}
 
-// .contacts__btn-location {
-//   color: var(--second-text-color);
-//   background-color: var(--yellow);
-//   border: 2px solid var(--yellow);
-//   transition: background-color 500ms linear, border 500ms linear;
+.contacts__btn-location {
+  color: var(--second-text-color);
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow);
+  transition: background-color 500ms linear, border 500ms linear;
 
-//   &:focus {
-//     background-color: var(--green);
-//     border-color: var(--green);
-//     color: var(--first-text-color);
-//   }
+  &:focus {
+    background-color: var(--green);
+    border-color: var(--green);
+    color: var(--first-text-color);
+  }
 
-//   &:focus .contacts__btn-icon {
-//     stroke: var(--first-text-color);
-//     fill: transparent;
-//   }
+  &:focus .contacts__btn-icon {
+    stroke: var(--first-text-color);
+    fill: transparent;
+  }
 
-//   &:hover {
-//     background-color: var(--green);
-//     border-color: var(--green);
+  &:hover {
+    background-color: var(--green);
+    border-color: var(--green);
 
-//     &:disabled {
-//       background-color: #ababab;
-//       border-color: #ababab;
-//     }
-//   }
-// }
+    &:disabled {
+      background-color: #ababab;
+      border-color: #ababab;
+    }
+  }
+}
 
-// .contacts__btn-franchise {
-//   color: var(--second-text-color);
-//   background-color: transparent;
-//   border: 2px solid var(--yellow);
-//   transition: background-color 500ms linear, border 500ms linear;
+.contacts__btn-franchise {
+  color: var(--second-text-color);
+  background-color: transparent;
+  border: 2px solid var(--yellow);
+  transition: background-color 500ms linear, border 500ms linear;
 
-//   &:focus {
-//     border-color: var(--green);
-//     color: var(--first-text-color);
-//   }
+  &:focus {
+    border-color: var(--green);
+    color: var(--first-text-color);
+  }
 
-//   &:focus .contacts__btn-icon {
-//     stroke: var(--first-text-color);
-//     fill: transparent;
-//   }
+  &:focus .contacts__btn-icon {
+    stroke: var(--first-text-color);
+    fill: transparent;
+  }
 
-//   &:hover {
-//     border-color: var(--green);
+  &:hover {
+    border-color: var(--green);
 
-//     &:disabled {
-//       border-color: #ababab;
-//     }
-//   }
-// }
+    &:disabled {
+      border-color: #ababab;
+    }
+  }
+}
 
-// .contacts__btn-icon {
-//   height: 12px;
-//   width: 12px;
-//   fill: #0000;
-//   stroke: currentColor;
-//   justify-content: center;
-//   align-items: center;
-//   display: flex;
-//   margin-left: 6px;
-// }
+.contacts__btn-icon {
+  height: 12px;
+  width: 12px;
+  fill: #0000;
+  stroke: currentColor;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 6px;
+}
