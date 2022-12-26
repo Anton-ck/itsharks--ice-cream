@@ -39,7 +39,7 @@
 }
 
 .pos {
-  max-width: 1200px;
+  // max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
   // justify-content: center;
@@ -159,8 +159,7 @@
 }
 
 .address__link {
-  font-family: 'Montserrat';
-  font-style: normal;
+
   font-weight: 500;
   font-size: 12px;
   line-height: 160%;
@@ -178,7 +177,6 @@
   max-width: 280px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
 
