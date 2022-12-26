@@ -4,17 +4,15 @@
   padding-left: 29px;
   padding-right: 30px;
 
-  max-height: 674px;
+  // max-height: 678px;
 
-  // @media screen and (max-width: 767px) {
-  //   max-width: 300px;
-  //   max-height: 674px;
-  //   overflow: scroll;
-  // }
+  @media screen and (max-width: 767px) {
+    max-height: 678px;
+  }
 
   @media screen and (min-width: 768px) {
     padding: 32px 60px;
-    max-height: 668px;
+    max-height: 672px;
   }
 }
 

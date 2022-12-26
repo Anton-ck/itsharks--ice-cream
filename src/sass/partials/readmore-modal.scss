@@ -1,7 +1,7 @@
 .readmore-modal {
   padding: 28px;
 
-  max-height: 459px;
+  max-height: 463px;
 
   // @media screen and (max-width: 767px) {
   //   max-width: 300px;
@@ -10,7 +10,8 @@
   // }
 
   @media screen and (min-width: 768px) {
-    max-height: 449px;
+    max-height: 453px;
+    padding: 32px 60px;
   }
 }
 
@@ -27,8 +28,13 @@
 .modal__text {
   font-size: 14px;
   line-height: 1.4;
+  letter-spacing: 0;
 
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .readmore__div {
