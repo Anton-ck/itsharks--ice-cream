@@ -155,14 +155,14 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 220px;
+  // width: 220px;
   gap: 4px;
 
   // tablet
   @media screen and (min-width: 768px) {
     text-align: left;
     margin-top: 80px;
-    width: 334px;
+    // width: 334px;
     margin-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -176,7 +176,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.94;
-    width: 463px;
+    // width: 463px;
     margin-top: 133px;
   }
 }
