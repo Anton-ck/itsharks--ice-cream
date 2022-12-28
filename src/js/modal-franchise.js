@@ -9,6 +9,8 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+                document.body.classList.toggle("mobile-open");
+
     refs.modal.classList.toggle('hidden');
   }
 })();
