@@ -49,6 +49,9 @@ body {
   cursor: url(../images/icons/vector.png) 1 5, auto;
 }
 
+body.mobile-open {
+  overflow: hidden;
+}
 .container {
   padding: 0 16px;
   margin: 0 auto;
