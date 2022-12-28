@@ -1,31 +1,28 @@
-<div class="backdrop hidden" data-modal-readmore>
-  <div class="modal-container">
-    <div class="readmore-modal modal">
-      <button
-        class="readmore-modal__button modal__close-button button"
-        data-modal-close-readmore
-      >
-        <svg class="close-icon" width="20" height="20">
-          <use href="./images/icons/icons.svg#close"></use>
-        </svg>
-      </button>
-      <h3 class="readmore-modal__title modal__title">How it’s made?</h3>
-      <iframe
-        class="readmore__div"
-        src="https://www.youtube.com/embed/Zq_zgig9DqQ"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <p class="readmore-modal__text modal__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-      </p>
-    </div>
-
+<div class="overlay js-overlay-modal">
+  <div class="readmore-modal modal" data-modal="3">
+    <button
+      class="readmore-modal__button modal__close-button button js-modal-close"
+    >
+      <svg class="close-icon" width="20" height="20">
+        <use href="./images/icons/icons.svg#close"></use>
+      </svg>
+    </button>
+    <h3 class="readmore-modal__title modal__title">How it’s made?</h3>
+    <iframe
+      class="readmore__div"
+      src="https://www.youtube.com/embed/Zq_zgig9DqQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <p class="readmore-modal__text modal__text">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+      adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+    </p>
   </div>
 </div>
 
-<script src="./js/modal-readmore.js"></script>
+<script src="./js/modal.js"></script>
+<!-- <script src="./js/modal-readmore.js"></script> -->
