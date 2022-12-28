@@ -1,43 +1,43 @@
 .swiper__section {
   // position: relative;
   padding-top: 178px;
-  padding-bottom: 400px;
+  padding-bottom: 393px;
 
   @media screen and (min-width: 768px) {
     padding-top: 283px;
-    padding-bottom: 80px;
+    padding-bottom: 379px;
   }
 
   @media screen and (min-width: 1200px) {
     padding-top: 464px;
-    padding-bottom: 150px;
+    padding-bottom: 228px;
   }
 
-  background-image: url('../images/reviews-bg/mobile.jpg');
+  background-image: url('../images/bcg/bcg-mob.webp');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/reviews-bg/mobile@2x.jpg');
+    background-image: url('../images/bcg/bcg-mob@2x.webp');
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/reviews-bg/tablet.jpg');
+    background-image: url('../images/bcg/bcg-tab.webp');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/reviews-bg/tablet@2x.jpg');
+      background-image: url('../images/bcg/bcg-tab@2x.webp');
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/reviews-bg/desctop.jpg');
+    background-image: url('../images/bcg/bcg-desk.webp');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/reviews-bg/desctop@2x.jpg');
+      background-image: url('../images/bcg/bcg-desk@2x.webp');
     }
   }
 }
@@ -129,7 +129,7 @@
   display: block;
   width: 85px;
   height: 85px;
-  
+  object-fit: contain;
 }
 
 .swiper-pagination-bullet {
