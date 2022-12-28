@@ -1,5 +1,13 @@
 .contacts {
   background-color: var(--background-color);
+  margin-bottom: -353px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: -299px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: -128px;
+  }
 }
 
 .contacts__list {
