@@ -4,96 +4,101 @@
   data-modal-product-2
   data-modal-product-3
 >
-  <div class="product-modal modal">
-    <button
-      class="product-modal__button modal__close-button button"
-      data-modal-close-product-1
-      data-modal-close-product-2
-      data-modal-close-product-3
-    >
-      <svg class="close-icon" width="20" height="20">
-        <use href="./images/icons/icons.svg#close"></use>
-      </svg>
-    </button>
-    <h3 class="product-modal__title modal__title">Chololate icecream</h3>
-    <div class="bg-gradient"><div class="div-image"></div></div>
-    <ul class="thumb__list list">
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">320</p>
-        </div>
-        <p class="thumb__text">kcal</p>
-      </li>
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">4g</p>
-        </div>
-        <p class="thumb__text">Prote...</p>
-      </li>
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">8,2g</p>
-        </div>
-        <p class="thumb__text">Fats</p>
-      </li>
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">40,4g</p>
-        </div>
-        <p class="thumb__text">Carbs</p>
-      </li>
-    </ul>
-    <p class="product__text">Ingredients</p>
-    <div class="product__list list">
-      <ul class="ingridient__list ingridient__list--left list">
-        <li class="ingridient__item">Milk</li>
-        <li class="ingridient__item">Belgian chocolate</li>
-        <li class="ingridient__item">Cream</li>
-        <li class="ingridient__item">Cocoa powder</li>
-        <li class="ingridient__item">Sugar</li>
-        <li class="ingridient__item">Vanilla sugar</li>
+  <div class="modal-container">
+    <div class="product-modal modal">
+      <button
+        class="product-modal__button modal__close-button button"
+        data-modal-close-product-1
+        data-modal-close-product-2
+        data-modal-close-product-3
+      >
+        <svg class="close-icon" width="20" height="20">
+          <use href="./images/icons/icons.svg#close"></use>
+        </svg>
+      </button>
+      <h3 class="product-modal__title modal__title">Chololate icecream</h3>
+      <div class="bg-gradient"><div class="div-image"></div></div>
+      <ul class="thumb__list list">
+        <li class="thumb__item">
+          <div class="thumb__div">
+            <p class="thumb__number">320</p>
+          </div>
+          <p class="thumb__text">kcal</p>
+        </li>
+        <li class="thumb__item">
+          <div class="thumb__div">
+            <p class="thumb__number">4g</p>
+          </div>
+          <p class="thumb__text">Prote...</p>
+        </li>
+        <li class="thumb__item">
+          <div class="thumb__div">
+            <p class="thumb__number">8,2g</p>
+          </div>
+          <p class="thumb__text">Fats</p>
+        </li>
+        <li class="thumb__item">
+          <div class="thumb__div">
+            <p class="thumb__number">40,4g</p>
+          </div>
+          <p class="thumb__text">Carbs</p>
+        </li>
       </ul>
-      <ul class="ingridient__list ingridient__list--right list">
-        <li class="ingridient__item">100ml</li>
-        <li class="ingridient__item">20g</li>
-        <li class="ingridient__item">150 ml</li>
-        <li class="ingridient__item">30g</li>
-        <li class="ingridient__item">40g</li>
-        <li class="ingridient__item">10g</li>
-      </ul>
-    </div>
-    <form name="product-modal__form" class="modal__form buy-modal__form">
-      <input
-        type="text"
-        name="name"
-        id="name-product"
-        class="product-modal__input modal__input"
-        placeholder="Name"
-      />
-      <!-- <div class="franchise__div">
+      <p class="product__text">Ingredients</p>
+      <div class="product__list list">
+        <ul class="ingridient__list ingridient__list--left list">
+          <li class="ingridient__item">Milk</li>
+          <li class="ingridient__item">Belgian chocolate</li>
+          <li class="ingridient__item">Cream</li>
+          <li class="ingridient__item">Cocoa powder</li>
+          <li class="ingridient__item">Sugar</li>
+          <li class="ingridient__item">Vanilla sugar</li>
+        </ul>
+        <ul class="ingridient__list ingridient__list--right list">
+          <li class="ingridient__item">100ml</li>
+          <li class="ingridient__item">20g</li>
+          <li class="ingridient__item">150 ml</li>
+          <li class="ingridient__item">30g</li>
+          <li class="ingridient__item">40g</li>
+          <li class="ingridient__item">10g</li>
+        </ul>
+      </div>
+      <form name="product-modal__form" class="modal__form buy-modal__form">
+        <input
+          type="text"
+          name="name"
+          id="name-product"
+          class="product-modal__input modal__input"
+          placeholder="Name"
+        />
+        <!-- <div class="franchise__div">
         <label for="name" name="name-user" class="franchise__label">Name</label>
       </div> -->
-      <input
-        type="tel"
-        name="tel"
-        id="tel-product"
-        class="product-modal__input modal__input"
-        placeholder="Phone"
-      />
-      <!-- <div class="franchise__div">
+        <input
+          type="tel"
+          name="tel"
+          id="tel-product"
+          class="product-modal__input modal__input"
+          placeholder="Phone"
+        />
+        <!-- <div class="franchise__div">
         <label for="tel" name="tel-user" class="franchise__label">Phone</label>
       </div> -->
-      <textarea
-        name="comment"
-        id="comment-product"
-        rows="4"
-        class="product-modal__input modal__input textarea"
-        placeholder="Comment"
-      ></textarea>
-      <button type="submit" class="product-modal__button modal__button button">
-        Submit
-      </button>
-    </form>
+        <textarea
+          name="comment"
+          id="comment-product"
+          rows="4"
+          class="product-modal__input modal__input textarea"
+          placeholder="Comment"
+        ></textarea>
+        <button
+          type="submit"
+          class="product-modal__button modal__button button"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
 </div>
 
