@@ -42,17 +42,18 @@
   @media screen and (max-width: 767px) {
     width: 95%;
     max-width: 284px;
-    height: 95%;
-    max-height: 995px;
+    // height: 95%;
+    // max-height: 995px;
     overflow: auto;
     overflow-x: scroll;
   }
 
   @media screen and (min-width: 768px) {
-    padding: 32px 58px;
-    max-width: 568px;
+
+    padding: 32px 60px;
+    max-width: 572px;
     // max-height: 648px;
-    width: 100%;
+    // width: 95%;
     // height: 95%;
     overflow: auto;
   }
