@@ -3,6 +3,8 @@
   // max-height: 369px;
   height: auto;
 
+  display: flex;
+  flex-direction: column;
   // @media screen and (max-width: 767px) {
   //   max-width: 300px;
   //   max-height: 674px;
@@ -11,7 +13,7 @@
 
   @media screen and (min-width: 768px) {
     padding: 30px 58px;
-    // max-height: 462px;
+    max-height: 462px;
   }
 }
 

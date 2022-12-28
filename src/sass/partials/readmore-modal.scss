@@ -1,8 +1,10 @@
 .readmore-modal {
   padding: 26px;
   height: auto;
+  display: flex;
+  flex-direction: column;
 
-  // max-height: 463px;
+  max-height: 463px;
 
   // @media screen and (max-width: 767px) {
   //   max-width: 300px;
@@ -11,7 +13,7 @@
   // }
 
   @media screen and (min-width: 768px) {
-    // max-height: 453px;
+    max-height: 453px;
     padding: 30px 58px;
   }
 }

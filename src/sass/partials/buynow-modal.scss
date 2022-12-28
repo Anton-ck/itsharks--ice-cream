@@ -170,20 +170,23 @@
   background-color: var(--first-text-color);
 }
 
+.buy-modal__checkbox {
+  cursor: pointer;
+  display: none;
+}
+
 .buy-modal__item:first-child:hover,
-.buy-modal__item:first-child:focus .buy-modal__item:first-child:active {
+.buy-modal__item:first-child:focus {
   background-color: #96af8c;
 }
 
 .buy-modal__item:nth-child(2):hover,
-.buy-modal__item:nth-child(2):focus,
-.buy-modal__item:nth-child(2):active {
+.buy-modal__item:nth-child(2):focus {
   background-color: var(--lite-yellow);
 }
 
 .buy-modal__item:last-child:hover,
-.buy-modal__item:last-child:focus,
-.buy-modal__item:last-child:active {
+.buy-modal__item:last-child:focus {
   background-color: var(--lite-orange);
 }
 
