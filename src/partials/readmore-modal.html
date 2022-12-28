@@ -1,5 +1,5 @@
 <div class="backdrop hidden" data-modal-readmore>
-  <div class="readmore-modal modal">
+  <div class="readmore-modal modal container">
     <button
       class="readmore-modal__button modal__close-button button"
       data-modal-close-readmore
@@ -9,12 +9,18 @@
       </svg>
     </button>
     <h3 class="readmore-modal__title modal__title">How it’s made?</h3>
-    <iframe
-      class="readmore__div"
-      src="https://www.youtube.com/embed/kTzl2HKDIak?controls=0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+
+    <div class="readmore__div">
+      <iframe
+        src="https://www.youtube.com/embed/kTzl2HKDIak"
+        width="448"
+        height="260"
+        loading="lazy"
+        target="_blank"
+        rel="nofollow noopener noreferrer"
+        class="location__map"
+      ></iframe>
+    </div>
     <p class="readmore-modal__text modal__text">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
