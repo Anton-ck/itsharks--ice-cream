@@ -26,7 +26,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 28px;
+  padding: 26px;
 
   transform: translate(-50%, -50%);
 
@@ -34,17 +34,15 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
 
-  @media screen and (max-width: 767px) {
-    width: 95%;
-    max-width: 284px;
-    // height: 95%;
-    // max-height: 995px;
-    overflow: auto;
-  }
+  width: 95%;
+  max-width: 284px;
+  height: 95%;
+  // max-height: 995px;
+  overflow: auto;
 
   @media screen and (min-width: 768px) {
-    padding: 32px 60px;
-    max-width: 572px;
+    padding: 30px 58px;
+    max-width: 568px;
     // max-height: 648px;
     // width: 95%;
     // height: 95%;
@@ -167,17 +165,19 @@
 }
 
 .buy-modal__item:first-child:hover,
-.buy-modal__item:first-child:focus {
+.buy-modal__item:first-child:focus .buy-modal__item:first-child:active {
   background-color: #96af8c;
 }
 
 .buy-modal__item:nth-child(2):hover,
-.buy-modal__item:nth-child(2):focus {
+.buy-modal__item:nth-child(2):focus,
+.buy-modal__item:nth-child(2):active {
   background-color: var(--lite-yellow);
 }
 
 .buy-modal__item:last-child:hover,
-.buy-modal__item:last-child:focus {
+.buy-modal__item:last-child:focus,
+.buy-modal__item:last-child:active {
   background-color: var(--lite-orange);
 }
 
@@ -356,6 +356,14 @@
   color: var(--second-text-color);
 }
 
+.modal__input:hover,
+.modal__input:focus {
+  background: rgba(10, 136, 23, 0.1);
+}
+.modal__input:invalid {
+  background: rgba(255, 0, 0, 0.1);
+}
+
 .modal__input::placeholder {
   font-size: 12px;
   line-height: 1.4;
@@ -393,10 +401,6 @@
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
   }
-}
-
-.modal__input:focus {
-  outline-color: #2196f3;
 }
 
 .textarea {
