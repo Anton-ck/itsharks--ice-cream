@@ -139,7 +139,14 @@
 }
 
 .buy-modal__thumb {
+  cursor: pointer;
   z-index: 1;
+  width: 132px;
+  height: 199px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  border-top-left-radius: 98px;
+  border-top-right-radius: 98px;
 }
 
 .buy-modal__image {
@@ -147,8 +154,6 @@
   height: 132px;
   border-radius: 50%;
 
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 27px;
 }
 
@@ -168,11 +173,6 @@
 .buy-modal__item:nth-child(2),
 .buy-modal__item:last-child {
   background-color: var(--first-text-color);
-}
-
-.buy-modal__checkbox {
-  cursor: pointer;
-  display: none;
 }
 
 .buy-modal__item:first-child:hover,
@@ -200,6 +200,24 @@
 
 .buy-modal__item:last-child {
   border: 2px solid var(--lite-orange);
+}
+
+.buy-modal__checkbox {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+}
+
+.buy-modal__checkbox:checked + .buy-modal__thumb--cream {
+  background-color: #96af8c;
+}
+
+.buy-modal__checkbox:checked + .buy-modal__thumb--icecoffee {
+  background-color: var(--lite-yellow);
+}
+
+.buy-modal__checkbox:checked + .buy-modal__thumb--milkshake {
+  background-color: var(--lite-orange);
 }
 
 .buy-modal__image--first {
