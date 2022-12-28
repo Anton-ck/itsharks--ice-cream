@@ -13,31 +13,31 @@
     padding-bottom: 250px;
   }
 
-  background-image: url('../images/reviews-bg/mobile.jpg');
+  background-image: url('../images/bcg/bcg-mob.webp');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url('../images/reviews-bg/mobile@2x.jpg');
+    background-image: url('../images/bcg/bcg-mob@2x.webp');
   }
 
   @media screen and (min-width: 768px) {
-    background-image: url('../images/reviews-bg/tablet.jpg');
+    background-image: url('../images/bcg/bcg-tab.webp');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/reviews-bg/tablet@2x.jpg');
+      background-image: url('../images/bcg/bcg-tab@2x.webp');
     }
   }
 
   @media screen and (min-width: 1200px) {
-    background-image: url('../images/reviews-bg/desctop.jpg');
+    background-image: url('../images/bcg/bcg-desk.webp');
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('../images/reviews-bg/desctop@2x.jpg');
+      background-image: url('../images/bcg/bcg-desk@2x.webp');
     }
   }
 }
