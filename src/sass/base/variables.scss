@@ -11,3 +11,101 @@
   --lite-orange: #d6936d;
   --lite-gray: #ababab;
 }
+
+//Брейкпоінти
+$mobile: 480px;
+$tablet: 768px;
+$desktop: 1200px;
+
+// primary-bg-color - основний колір фону
+$primary-bg-color: #84a178;
+
+// колір карточок і бордерів у секціі продукти зелений
+$first-cards-color: #aec6a5;
+
+// колір карточок і бордерів у секціі продукти жовтий
+$second-cards-color: #efd478;
+
+// колір карточок і бордерів у секціі продукти персиковий
+$third-cards-color: #d6936d;
+
+// колір акцентів, кнопок, бордерів кнопок, підложки іконок соцмереж
+$accent-color: #f8d24e;
+
+// колір декоративного елементу - кола в секціі продукти,
+// колір круглих елементів в модальних вікнах about product, buy now
+$decor-elements-color: #9cbe8f;
+
+// колір ховеру кнопок та лінків
+$hover-color: #0a8817;
+
+// колір неактивних кнопок та лінків
+$disabled-color: #ababab;
+
+// колір тексту та заголовків у секціях зі світлим фоном (це не повністю чорний)
+$primary-text-color: #131313;
+
+// колір тексту та заголовків у секціях з темним фоном (це не повністю білий), колір тексту при фокусі, колір іконок соцмереж при фокусі
+$white-text-color: #fcfcfc;
+
+// gray-text-color - колір тексту в секціі контакти
+$gray-text-color: #ababab;
+
+// колір копірайту в секціі футер
+$copyright-color: #7a7a7a;
+
+// колір тексту при фокусі
+$focus-color: #ffffff;
+
+// колір бордеру в контактах
+$border-color: #e1e1e1;
+
+// основний фон
+$main-fon: 'Montserrat', sans-serif;
+
+// другорядний фон
+$secondary-fon: 'Seymour One', sans-serif;
+
+// кубік для анімацій
+$transition-duration: 300ms;
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$transition-timing-function: $timing-function;
+
+//тінь
+$shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+@mixin mq($type) {
+  $phone: 480px;
+  $tablet: 768px;
+  $desktop: 1200px;
+
+  @if $type == 'phone' {
+    @media screen and (min-width: $phone) {
+      @content;
+    }
+  }
+
+  @if $type == 'phone-only' {
+    @media screen and (max-width: #{$tablet - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $type == 'tablet' {
+    @media screen and (min-width: $tablet) {
+      @content;
+    }
+  }
+
+  @if $type == 'tablet-only' {
+    @media screen and (max-width: #{$desktop - 0.02}) {
+      @content;
+    }
+  }
+
+  @if $type == 'desktop' {
+    @media screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+}

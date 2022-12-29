@@ -1,90 +1,194 @@
-<div class="overlay js-overlay-modal">
-  <div class="product-modal modal" data-modal="2">
-    <button
-      class="product-modal__button modal__close-button button js-modal-close"
-    >
-      <svg class="close-icon" width="20" height="20">
+<div class="backdrop is-hidden" data-modal id="product-icecream">
+    <div class="modal product-modal">
+        <button class="modal__close" data-modal-close>
+      <svg class="modal__icon" width="20" height="20">
         <use href="./images/icons/icons.svg#close"></use>
-      </svg>
-    </button>
-    <h3 class="product-modal__title modal__title">Chololate icecream</h3>
-    <div class="bg-gradient"><div class="div-image"></div></div>
-    <ul class="thumb__list list">
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">320</p>
-        </div>
-        <p class="thumb__text">kcal</p>
-      </li>
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">4g</p>
-        </div>
-        <p class="thumb__text">Prote...</p>
-      </li>
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">8,2g</p>
-        </div>
-        <p class="thumb__text">Fats</p>
-      </li>
-      <li class="thumb__item">
-        <div class="thumb__div">
-          <p class="thumb__number">40,4g</p>
-        </div>
-        <p class="thumb__text">Carbs</p>
-      </li>
-    </ul>
-    <p class="product__text">Ingredients</p>
-    <div class="product__list list">
-      <ul class="ingridient__list ingridient__list--left list">
-        <li class="ingridient__item">Milk</li>
-        <li class="ingridient__item">Belgian chocolate</li>
-        <li class="ingridient__item">Cream</li>
-        <li class="ingridient__item">Cocoa powder</li>
-        <li class="ingridient__item">Sugar</li>
-        <li class="ingridient__item">Vanilla sugar</li>
-      </ul>
-      <ul class="ingridient__list ingridient__list--right list">
-        <li class="ingridient__item">100ml</li>
-        <li class="ingridient__item">20g</li>
-        <li class="ingridient__item">150 ml</li>
-        <li class="ingridient__item">30g</li>
-        <li class="ingridient__item">40g</li>
-        <li class="ingridient__item">10g</li>
-      </ul>
+            </svg>
+        </button>
+        <h3 class="modal__title">Chololate icecream</h3>
+        <img class="product-modal__img" 
+        srcset=
+        
+        "./images/products/img1-mob200.png 132w,
+          ./images/products/img1-mob200@2x.png 264w"
+            
+          
+          src="./images/products/img1-mob200.png" sizes="100vw"
+          alt="chocololatea_ice_cream">
+        <ul class="composition">
+            <li class="composition__item">
+                <span class="composition__value">320</span>kcal
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">4g</span>Prote...
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">8,2g</span>Fats
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">40,4g</span>Carbs
+            </li>
+        </ul>
+        <h4 class="product-modal__subtitle">Ingredients</h4>
+        <dl class="ingredients">
+            <dt class="ingredients__compound">Milk</dt>
+            <dd class="ingredients__value">100ml</dd>
+            <dt class="ingredients__compound">Belgian chocolate</dt>
+            <dd class="ingredients__value">20g</dd>
+            <dt class="ingredients__compound">Cream</dt>
+            <dd class="ingredients__value">150 ml</dd>
+            <dt class="ingredients__compound">Cocoa powder</dt>
+            <dd class="ingredients__value">30g</dd>
+            <dt class="ingredients__compound">Sugar</dt>
+            <dd class="ingredients__value">40g</dd>
+            <dt class="ingredients__compound">Vanilla sugar</dt>
+            <dd class="ingredients__value">10g</dd>
+        </dl>
+
+        <form class="form product-form">
+            <fieldset class="form__field">
+                <div class="form__group">
+                    <input class="form__input" type="text" name="user-name" placeholder="Name" title="Enter your name"
+                        minlength="3" pattern="[A-Za-z]+" required>
+                </div>
+                <div class="form__group">
+                    <input class="form__input" type="tel" name="tel" placeholder="Phone" title="for example: 0961234567"
+                        pattern="[0-9]{10}" required>
+                </div>
+                <div class="form__group">
+                    <textarea class="form__coment" name="comment" rows="3" placeholder="Comment"></textarea>
+                </div>
+            </fieldset>
+            <button class="button form__button product-form__button" type="submit">Submit</button>
+        </form>
     </div>
-    <form name="product-modal__form" class="modal__form buy-modal__form">
-      <input
-        type="text"
-        name="name"
-        id="name-product"
-        class="product-modal__input modal__input"
-        placeholder="Name"
-      />
-      <!-- <div class="franchise__div">
-        <label for="name" name="name-user" class="franchise__label">Name</label>
-      </div> -->
-      <input
-        type="tel"
-        name="tel"
-        id="tel-product"
-        class="product-modal__input modal__input"
-        placeholder="Phone"
-      />
-      <!-- <div class="franchise__div">
-        <label for="tel" name="tel-user" class="franchise__label">Phone</label>
-      </div> -->
-      <textarea
-        name="comment"
-        id="comment-product"
-        rows="4"
-        class="product-modal__input modal__input textarea"
-        placeholder="Comment"
-      ></textarea>
-      <button type="submit" class="product-modal__button modal__button button">
-        Submit
-      </button>
-    </form>
-  </div>
+</div>
+
+<div class="backdrop is-hidden" data-modal id="product-icecoffee">
+    <div class="modal product-modal">
+        <button class="modal__close" data-modal-close>
+      <svg class="modal__icon" width="20" height="20">
+        <use href="./images/icons/icons.svg#close"></use>
+            </svg>
+        </button>
+        <h3 class="modal__title">Chololate ice coffee</h3>
+        <img class="product-modal__img product-modal__img--yellow" 
+        
+        srcset="./images/products/img2-mob200.png 132w,
+                ./images/products/img2-mob200@2x.png 264w" 
+                src="./images/products/img2-mob200.png"
+            
+                sizes="100vw" alt="ice-coffee">
+        <ul class="composition composition--yellow">
+            <li class="composition__item">
+                <span class="composition__value">180</span>kcal
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">3g</span>Prote...
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">3,2g</span>Fats
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">43,4g</span>Carbs
+            </li>
+        </ul>
+        <h4 class="product-modal__subtitle">Ingredients</h4>
+        <dl class="ingredients">
+            <dt class="ingredients__compound">Milk</dt>
+            <dd class="ingredients__value">120ml</dd>
+            <dt class="ingredients__compound">Belgian chocolate</dt>
+            <dd class="ingredients__value">10g</dd>
+            <dt class="ingredients__compound">Cream</dt>
+            <dd class="ingredients__value">100 ml</dd>
+            <dt class="ingredients__compound">Cocoa powder</dt>
+            <dd class="ingredients__value">40g</dd>
+            <dt class="ingredients__compound">Sugar</dt>
+            <dd class="ingredients__value">80g</dd>
+            <dt class="ingredients__compound">Vanilla sugar</dt>
+            <dd class="ingredients__value">10g</dd>
+        </dl>
+
+        <form class="form product-form">
+            <fieldset class="form__field">
+                <div class="form__group">
+                    <input class="form__input product-form__input--yellow" type="text" name="user-name"
+                        placeholder="Name" title="Enter your name" minlength="3" pattern="[A-Za-z]+" required>
+                </div>
+                <div class="form__group">
+                    <input class="form__input product-form__input--yellow" type="tel" name="tel" placeholder="Phone"
+                        title="for example: 0961234567" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form__group">
+                    <textarea class="form__coment product-form__coment--yellow" name="comment" rows="3"
+                        placeholder="Comment"></textarea>
+                </div>
+            </fieldset>
+            <button class="button form__button product-form__button" type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div class="backdrop is-hidden" data-modal id="product-milkshakes">
+    <div class="modal product-modal">
+        <button class="modal__close" data-modal-close>
+      <svg class="modal__icon" width="20" height="20">
+        <use href="./images/icons/icons.svg#close"></use>
+            </svg>
+        </button>
+        <h3 class="modal__title">Chololate milkshakes</h3>
+        <img class="product-modal__img product-modal__img--brown" 
+        srcset="./images/products/img3-mob200.png 132w,
+                    ./images/products/img3-mob200.png 264w" 
+                    src="./images/products/img3-mob200.png"
+            sizes="100vw" alt="milkshakes">
+        <ul class="composition composition--brown">
+            <li class="composition__item">
+                <span class="composition__value">275</span>kcal
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">3,7g</span>Prote...
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">6,2g</span>Fats
+            </li>
+            <li class="composition__item">
+                <span class="composition__value">41,4g</span>Carbs
+            </li>
+        </ul>
+        <h4 class="product-modal__subtitle">Ingredients</h4>
+        <dl class="ingredients">
+            <dt class="ingredients__compound">Milk</dt>
+            <dd class="ingredients__value">200ml</dd>
+            <dt class="ingredients__compound">Belgian chocolate</dt>
+            <dd class="ingredients__value">15g</dd>
+            <dt class="ingredients__compound">Cream</dt>
+            <dd class="ingredients__value">100 ml</dd>
+            <dt class="ingredients__compound">Cocoa powder</dt>
+            <dd class="ingredients__value">40g</dd>
+            <dt class="ingredients__compound">Sugar</dt>
+            <dd class="ingredients__value">40g</dd>
+            <dt class="ingredients__compound">Vanilla sugar</dt>
+            <dd class="ingredients__value">10g</dd>
+        </dl>
+
+        <form class="form product-form">
+            <fieldset class="form__field">
+                <div class="form__group">
+                    <input class="form__input product-form__input--brown" type="text" name="user-name"
+                        placeholder="Name" title="Enter your name" minlength="3" pattern="[A-Za-z]+" required>
+                </div>
+                <div class="form__group">
+                    <input class="form__input product-form__input--brown" type="tel" name="tel" placeholder="Phone"
+                        title="for example: 0961234567" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form__group">
+                    <div class="form__group">
+                        <textarea class="form__coment product-form__coment--brown" name="comment" rows="3"
+                            placeholder="Comment"></textarea>
+                    </div>
+            </fieldset>
+            <button class="button form__button product-form__button" type="submit">Submit</button>
+        </form>
+    </div>
 </div>
