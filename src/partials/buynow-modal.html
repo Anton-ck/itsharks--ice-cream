@@ -7,68 +7,64 @@
     </button>
     <h3 class="buy-modal__title modal__title">Buy now</h3>
 
-      <ul class="buy-modal__list">
-        <li class="buy-modal__item">
-          <input
-            type="checkbox"
-            id="cream"
-
-            value="agree"
-            name="icecream"
-            class="buy-modal__checkbox"
-          />
-
-          <label class="buy-modal__thumb buy-modal__thumb--cream" for="cream">
-            <div class="buy-modal__image buy-modal__image--first"></div>
-            <p class="buy-modal__name">ice cream</p>
-          </label>
-        </li>
-        <li class="buy-modal__item">
-
-          <input
-            type="checkbox"
-            id="icecoffee"
-            value="agree"
-            name="icecoffee"
-            class="buy-modal__checkbox"
-          />
-
-          <label
-            class="buy-modal__thumb buy-modal__thumb--icecoffee"
-            for="icecoffee"
-          >
-            <div class="buy-modal__image buy-modal__image--second"></div>
-            <p class="buy-modal__name">ice coffee</p>
-          </label>
-        </li>
-        <li class="buy-modal__item">
-
-          <input
-            type="checkbox"
-            id="milkshake"
-            value="agree"
-            name="milkshake"
-            class="buy-modal__checkbox"
-          />
-          <label
-            class="buy-modal__thumb buy-modal__thumb--milkshake"
-            for="milkshake"
-          >
-            <div class="buy-modal__image buy-modal__image--third"></div>
-            <p class="buy-modal__name">milkshake</p>
-          </label>
-        </li>
-      </ul>
-      <form name="buy-modal__form" class="modal__form buy-modal__form">
+    <ul class="buy-modal__list">
+      <li class="buy-modal__item">
         <input
-          type="text"
-          name="name"
-          id="name-buynow"
-          class="buy-modal__input modal__input"
-          placeholder="Name"
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+          type="checkbox"
+          id="cream"
+          value="agree"
+          name="icecream"
+          class="buy-modal__checkbox"
         />
-        <!-- <div class="franchise__div">
+        <label class="buy-modal__thumb buy-modal__thumb--cream" for="cream">
+          <div class="buy-modal__image buy-modal__image--first"></div>
+          <span class="buy-modal__name">ice cream</span>
+        </label>
+      </li>
+      <li class="buy-modal__item">
+        <input
+          type="checkbox"
+          id="icecoffee"
+          value="agree"
+          name="icecoffee"
+          class="buy-modal__checkbox"
+        />
+
+        <label
+          class="buy-modal__thumb buy-modal__thumb--icecoffee"
+          for="icecoffee"
+        >
+          <div class="buy-modal__image buy-modal__image--second"></div>
+          <span class="buy-modal__name">ice coffee</span>
+        </label>
+      </li>
+      <li class="buy-modal__item">
+        <input
+          type="checkbox"
+          id="milkshake"
+          value="agree"
+          name="milkshake"
+          class="buy-modal__checkbox"
+        />
+        <label
+          class="buy-modal__thumb buy-modal__thumb--milkshake"
+          for="milkshake"
+        >
+          <div class="buy-modal__image buy-modal__image--third"></div>
+          <span class="buy-modal__name">milkshake</span>
+        </label>
+      </li>
+    </ul>
+    <form name="buy-modal__form" class="modal__form buy-modal__form">
+      <input
+        type="text"
+        name="name"
+        id="name-buynow"
+        class="buy-modal__input modal__input"
+        placeholder="Name"
+        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+      />
+      <!-- <div class="franchise__div">
 
         <label for="name" name="name-user" class="franchise__label">Name</label>
       </div> -->
@@ -96,5 +92,3 @@
     </form>
   </div>
 </div>
-
-<script src="./js/modal.js"></script>
