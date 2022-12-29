@@ -214,16 +214,22 @@
   position: absolute;
 }
 
-.buy-modal__checkbox:checked + .buy-modal__thumb--cream {
-  background-color: #96af8c;
+.buy-modal__checkbox:checked {
+  .buy-modal__thumb--cream {
+    background-color: #96af8c;
+  }
 }
 
-.buy-modal__checkbox:checked + .buy-modal__thumb--icecoffee {
-  background-color: var(--lite-yellow);
+.buy-modal__checkbox:checked {
+  .buy-modal__thumb--icecoffee {
+    background-color: var(--lite-yellow);
+  }
 }
 
-.buy-modal__checkbox:checked + .buy-modal__thumb--milkshake {
-  background-color: var(--lite-orange);
+.buy-modal__checkbox:checked {
+  .buy-modal__thumb--milkshake {
+    background-color: var(--lite-orange);
+  }
 }
 
 .buy-modal__image--first {
