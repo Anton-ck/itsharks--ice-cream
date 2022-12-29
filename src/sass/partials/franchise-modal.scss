@@ -3,7 +3,7 @@
   padding-bottom: 26px;
   padding-left: 27px;
   padding-right: 28px;
-  height: auto;
+  // height: auto;
   // max-height: 678px;
 
   // @media screen and (max-width: 767px) {
@@ -11,9 +11,8 @@
   // }
 
   @media screen and (min-width: 768px) {
-    height: 95%;
     padding: 30px 58px;
-    // max-height: 672px;
+    max-height: 672px;
   }
 }
 
