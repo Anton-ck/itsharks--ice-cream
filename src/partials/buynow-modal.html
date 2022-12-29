@@ -1,96 +1,95 @@
-<div class="overlay js-overlay-modal">
-  <div class="buy-modal modal" data-modal="1">
-    <button class="buy-modal__button modal__close-button button js-modal-close">
-      <svg class="close-icon" width="20" height="20">
-        <use href="./images/icons/icons.svg#close"></use>
-      </svg>
-    </button>
-    <h3 class="buy-modal__title modal__title">Buy now</h3>
+<div class="buy-modal modal" data-modal="1">
+  <button class="buy-modal__button modal__close-button button js-modal-close">
+    <svg class="close-icon" width="20" height="20">
+      <use href="./images/icons/icons.svg#close"></use>
+    </svg>
+  </button>
+  <h3 class="buy-modal__title modal__title">Buy now</h3>
 
-    <ul class="buy-modal__list">
-      <li class="buy-modal__item">
-        <input
-          type="checkbox"
-          id="cream"
-          value="agree"
-          name="icecream"
-          class="buy-modal__checkbox"
-        />
-        <div class="buy-modal__image buy-modal__image--first">
-          <label class="buy-modal__thumb buy-modal__thumb--cream" for="cream">
-            <span class="buy-modal__name">ice cream</span>
-          </label>
-        </div>
-      </li>
-      <li class="buy-modal__item">
-        <input
-          type="checkbox"
-          id="icecoffee"
-          value="agree"
-          name="icecoffee"
-          class="buy-modal__checkbox"
-        />
-        <div class="buy-modal__image buy-modal__image--second">
-          <label
-            class="buy-modal__thumb buy-modal__thumb--icecoffee"
-            for="icecoffee"
-          >
-            <span class="buy-modal__name">ice coffee</span>
-          </label>
-        </div>
-      </li>
-      <li class="buy-modal__item">
-        <input
-          type="checkbox"
-          id="milkshake"
-          value="agree"
-          name="milkshake"
-          class="buy-modal__checkbox"
-        />
-        <div class="buy-modal__image buy-modal__image--third">
-          <label
-            class="buy-modal__thumb buy-modal__thumb--milkshake"
-            for="milkshake"
-          >
-            <span class="buy-modal__name">milkshake</span>
-          </label>
-        </div>
-      </li>
-    </ul>
-    <form name="buy-modal__form" class="modal__form buy-modal__form">
+  <ul class="buy-modal__list">
+    <li class="buy-modal__item">
       <input
-        type="text"
-        name="name"
-        id="name-buynow"
-        class="buy-modal__input modal__input"
-        placeholder="Name"
-        pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+        type="checkbox"
+        id="cream"
+        value="agree"
+        name="icecream"
+        class="buy-modal__checkbox"
       />
-      <!-- <div class="franchise__div">
+      <div class="buy-modal__image buy-modal__image--first">
+        <label class="buy-modal__thumb buy-modal__thumb--cream" for="cream">
+          <span class="buy-modal__name">ice cream</span>
+        </label>
+      </div>
+    </li>
+    <li class="buy-modal__item">
+      <input
+        type="checkbox"
+        id="icecoffee"
+        value="agree"
+        name="icecoffee"
+        class="buy-modal__checkbox"
+      />
+      <div class="buy-modal__image buy-modal__image--second">
+        <label
+          class="buy-modal__thumb buy-modal__thumb--icecoffee"
+          for="icecoffee"
+        >
+          <span class="buy-modal__name">ice coffee</span>
+        </label>
+      </div>
+    </li>
+    <li class="buy-modal__item">
+      <input
+        type="checkbox"
+        id="milkshake"
+        value="agree"
+        name="milkshake"
+        class="buy-modal__checkbox"
+      />
+      <div class="buy-modal__image buy-modal__image--third">
+        <label
+          class="buy-modal__thumb buy-modal__thumb--milkshake"
+          for="milkshake"
+        >
+          <span class="buy-modal__name">milkshake</span>
+        </label>
+      </div>
+    </li>
+  </ul>
+  <form name="buy-modal__form" class="modal__form buy-modal__form">
+    <input
+      type="text"
+      name="name"
+      id="name-buynow"
+      class="buy-modal__input modal__input"
+      placeholder="Name"
+      pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
+    />
+    <!-- <div class="franchise__div">
 
         <label for="name" name="name-user" class="franchise__label">Name</label>
       </div> -->
-      <input
-        type="tel"
-        name="tel"
-        id="tel-buynow"
-        class="buy-modal__input modal__input"
-        placeholder="Phone"
-        pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$"
-      />
-      <!-- <div class="franchise__div">
+    <input
+      type="tel"
+      name="tel"
+      id="tel-buynow"
+      class="buy-modal__input modal__input"
+      placeholder="Phone"
+      pattern="^\+\d{2} \(\d{3}\) \d{3}-\d{2}-\d{2}$"
+    />
+    <!-- <div class="franchise__div">
         <label for="tel" name="tel-user" class="franchise__label">Phone</label>
       </div> -->
-      <textarea
-        name="comment"
-        id="comment-buynow"
-        rows="4"
-        class="buy-modal__input modal__input textarea"
-        placeholder="Comment"
-      ></textarea>
-      <button type="submit" class="buy-modal__button modal__button button">
-        Submit
-      </button>
-    </form>
-  </div>
+    <textarea
+      name="comment"
+      id="comment-buynow"
+      rows="4"
+      class="buy-modal__input modal__input textarea"
+      placeholder="Comment"
+    ></textarea>
+    <button type="submit" class="buy-modal__button modal__button button">
+      Submit
+    </button>
+  </form>
 </div>
+<div class="overlay js-overlay-modal"></div>
