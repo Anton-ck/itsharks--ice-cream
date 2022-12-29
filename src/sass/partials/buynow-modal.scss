@@ -143,6 +143,8 @@
 }
 
 .buy-modal__thumb {
+  display: flex;
+  justify-content: center;
   cursor: pointer;
   z-index: 1;
   width: 132px;
