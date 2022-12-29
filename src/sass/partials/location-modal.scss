@@ -1,37 +1,97 @@
-.location-modal {
-  padding: 26px;
-  // max-height: 369px;
-  height: auto;
+// .location-modal {
+//   padding: 26px;
+//   // max-height: 369px;
+//   height: auto;
 
-  display: flex;
-  flex-direction: column;
-  // @media screen and (max-width: 767px) {
-  //   max-width: 300px;
-  //   max-height: 674px;
-  //   overflow: scroll;
-  // }
+//   display: flex;
+//   flex-direction: column;
+//   // @media screen and (max-width: 767px) {
+//   //   max-width: 300px;
+//   //   max-height: 674px;
+//   //   overflow: scroll;
+//   // }
 
-  @media screen and (min-width: 768px) {
-    padding: 30px 58px;
-    max-height: 462px;
+//   @media screen and (min-width: 768px) {
+//     padding: 30px 58px;
+//     max-height: 462px;
+//   }
+// }
+
+// .location-modal__title {
+//   margin-bottom: 20px;
+
+//   @media screen and (min-width: 768px) {
+//     margin-bottom: 32px;
+//   }
+// }
+
+// .location__div {
+//   border-radius: 10px;
+//   width: 224px;
+//   height: 199px;
+
+//   @media screen and (min-width: 768px) {
+//     width: 448px;
+//     height: 260px;
+//   }
+// }
+
+.location {
+  &__close {
+    display: flex;
+    top: 12px;
+    right: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    transition: fill 300ms $timing-function;
   }
-}
 
-.location-modal__title {
-  margin-bottom: 20px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 32px;
+  &__title {
+    @include mq(tablet) {
+      margin-bottom: 32px;
+    }
   }
-}
 
-.location__div {
-  border-radius: 10px;
-  width: 224px;
-  height: 199px;
+  &__wrapper {
+    width: 100%;
+    max-width: 224px;
+    max-height: 199px;
+    margin-bottom: 24px;
+    @include mq(tablet) {
+      max-width: 448px;
+      max-height: 260px;
+      margin-bottom: 32px;
+    }
+  }
 
-  @media screen and (min-width: 768px) {
-    width: 448px;
-    height: 260px;
+  &__map {
+    max-width: inherit;
+    max-height: inherit;
+  }
+
+  &__btn {
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    @include mq(tablet) {
+      margin-top: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      background-color: inherit;
+    }
+    &:focus {
+      text-decoration: none;
+      background-color: inherit;
+      color: $focus-color;
+    }
   }
 }

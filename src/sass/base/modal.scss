@@ -1,0 +1,184 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  line-height: calc(100vh - 20px);
+  overflow: auto;
+  background: rgba(176, 196, 167, 0.5);
+  text-align: center;
+  padding: 10px;
+  z-index: 100;
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+
+.modal {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 280px;
+  background: var(--first-text-color);
+  border: 2px solid var(--yellow);
+  border-radius: 10px;
+  box-shadow: 0px 15px 15px 15px rgba(0, 0, 0, 0.12),
+    0px 13px 13px 13px rgba(0, 0, 0, 0.12),
+    0px 13px 13px 13px rgba(0, 0, 0, 0.12);
+  text-align: left;
+  padding: 28px;
+  font-size: 14px;
+  line-height: 1.43;
+  transform: translate(0, 0%) scale(1);
+  transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 32px 58px;
+    max-width: 568px;
+  }
+
+  .is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  &__close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 17px;
+    right: 17px;
+    background-color: transparent;
+    border: none;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      width: 30px;
+      height: 30px;
+    }
+
+    &:hover,
+    &:focus {
+      fill: var(--green);
+      background-color: var(--yellow);
+      border: var(--yellow);
+      border-radius: 50%;
+    }
+
+    &-icon {
+      width: 11px;
+      height: 11px;
+      @media screen and (min-width: 768px) {
+        width: 14px;
+        height: 14px;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Seymour One';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--second-text-color);
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+      line-height: 1.4;
+      max-width: 322px;
+      margin: 0 auto 24px;
+    }
+  }
+
+  &__text {
+    color: var(--second-text-color);
+    margin-bottom: 24px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.form {
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.4;
+  @media screen and (min-width: 768px) {
+    max-width: 368px;
+    margin: 0 auto;
+    font-size: 14px;
+  }
+
+  &__field {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__group {
+    margin-bottom: 12px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 16px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input,
+  &__coment {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    height: 32px;
+    background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    border-radius: 10px;
+    color: $primary-text-color;
+    outline: none;
+    cursor: pointer;
+    @media screen and (min-width: 768px) {
+      padding: 11px 16px;
+      height: 42px;
+    }
+
+    &::placeholder {
+      color: var(--second-text-color);
+    }
+
+    &:hover,
+    &:focus {
+      background: rgba(10, 136, 23, 0.2);
+    }
+
+    &:invalid.form__input:focus {
+      background: rgba(255, 0, 0, 0.1);
+    }
+  }
+
+  &__coment {
+    resize: none;
+    height: 64px;
+    @media screen and (min-width: 768px) {
+      height: 83px;
+    }
+  }
+
+  &__button {
+    margin-top: 24px;
+    @media screen and (min-width: 768px) {
+      margin-top: 32px;
+    }
+  }
+}

@@ -1,24 +1,28 @@
-<div class="overlay js-overlay-modal">
-  <div class="readmore-modal modal" data-modal="3">
+<div class="backdrop is-hidden" data-modal id="about-modal">
+  <div class="modal about__modal">
     <button
-      class="readmore-modal__button modal__close-button button js-modal-close"
+      type="button"
+      id="stop"
+      class="about__close-button modal__close"
+      data-modal-close
     >
-      <svg class="close-icon" width="20" height="20">
+      <svg class="about__close" width="20" height="20">
         <use href="./images/icons/icons.svg#close"></use>
       </svg>
     </button>
-    <h3 class="readmore-modal__title modal__title">How it’s made?</h3>
-
-    <!-- <div class="readmore__div"> -->
-    <iframe
-      class="readmore__div"
-      style="border: 0"
-      src="https://www.youtube.com/embed/Zq_zgig9DqQ"
-      title="YouTube video player"
-    ></iframe>
-    <!-- </div> -->
-
-    <p class="readmore-modal__text modal__text">
+    <h3 class="about__title">How it&#39;s made?</h3>
+    <div class="about__wrapper">
+      <iframe
+        src="https://www.youtube.com/embed/8WEMZ86Eho8"
+        id="my-video"
+        width="448"
+        height="260"
+        loading="lazy"
+        rel="noopener noreferrer nofollow"
+        class="about__video"
+      ></iframe>
+    </div>
+    <p class="about__subject">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et
